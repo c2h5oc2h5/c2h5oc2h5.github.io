@@ -21,19 +21,6 @@
 ]]></content>
   </entry>
   <entry>
-    <title>关于我</title>
-    <url>/2022/07/19/%E4%B8%AA%E4%BA%BA%E4%BB%8B%E7%BB%8D/</url>
-    <content><![CDATA[<center>工具决定思维
-
-<span id="more"></span>
-
-
-<center><img src="https://s1.328888.xyz/2022/07/18/NYr1F.webp"></center>
-<center>C2H5OC2H5</center>
-<center>好萌</center>
-]]></content>
-  </entry>
-  <entry>
     <title>数码管显示时间</title>
     <url>/2022/07/19/%E6%95%B0%E7%A0%81%E7%AE%A1%E6%98%BE%E7%A4%BA%E6%97%B6%E9%97%B4/</url>
     <content><![CDATA[<p>利用python的turtle库来实现用7段数码管来显示时间</p>
@@ -49,6 +36,19 @@
       <tags>
         <tag>python</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>关于我</title>
+    <url>/2022/07/19/%E4%B8%AA%E4%BA%BA%E4%BB%8B%E7%BB%8D/</url>
+    <content><![CDATA[<center>工具决定思维
+
+<span id="more"></span>
+
+
+<center><img src="https://s1.328888.xyz/2022/07/18/NYr1F.webp"></center>
+<center>C2H5OC2H5</center>
+<center>好萌</center>
+]]></content>
   </entry>
   <entry>
     <title>通过Python turtle库实现数码管倒计时</title>
