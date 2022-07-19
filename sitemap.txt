@@ -1,3 +1,4 @@
+https://c2h5oc2h5.github.io/2022/07/20/Python%E7%94%A8%E9%80%92%E5%BD%92%E5%87%BD%E6%95%B0%E6%B1%82%E8%A7%A3%E6%B1%89%E8%AF%BA%E5%A1%94%E9%97%AE%E9%A2%98/
 https://c2h5oc2h5.github.io/2022/07/20/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%80/
 https://c2h5oc2h5.github.io/2022/07/19/%E4%B8%AA%E4%BA%BA%E4%BB%8B%E7%BB%8D/
 https://c2h5oc2h5.github.io/2022/07/19/%E9%80%9A%E8%BF%87Python%20turtle%E5%BA%93%E5%AE%9E%E7%8E%B0%E6%95%B0%E7%A0%81%E7%AE%A1%E5%80%92%E8%AE%A1%E6%97%B6/
@@ -7,5 +8,5 @@ https://c2h5oc2h5.github.io/tags/index.html
 https://c2h5oc2h5.github.io/2022/07/19/hello-world/
 https://c2h5oc2h5.github.io/
 https://c2h5oc2h5.github.io/tags/python/
-https://c2h5oc2h5.github.io/categories/Blog/
 https://c2h5oc2h5.github.io/categories/Code/
+https://c2h5oc2h5.github.io/categories/Blog/
