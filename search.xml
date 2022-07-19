@@ -3,8 +3,8 @@
   <entry>
     <title>Python函数和代码复用练习一</title>
     <url>/2022/07/20/Python%E5%87%BD%E6%95%B0%E5%92%8C%E4%BB%A3%E7%A0%81%E5%A4%8D%E7%94%A8%E7%BB%83%E4%B9%A0%E4%B8%80/</url>
-    <content><![CDATA[<h4 id="随机密码生成"><a href="#随机密码生成" class="headerlink" title="随机密码生成"></a>随机密码生成</h4><h5 id="描述"><a href="#描述" class="headerlink" title="描述"></a>描述</h5><p>补充编程模板中代码，完成如下功能：‪‬‪‬‪‬‪‬‪‬‮‬‪‬‫‬‪‬‪‬‪‬‪‬‪‬‮‬‪‬‪‬‪‬‪‬‪‬‪‬‪‬‮‬‪‬‮‬‪‬‪‬‪‬‪‬‪‬‫‬‭‬‪‬‪‬‪‬‪‬‪‬‮‬‭‬‪‬‪‬‪‬‪‬‪‬‪‬‮‬‭‬‫‬‪‬‪‬‪‬‪‬‪‬‮‬‫‬‫‬</p>
-<p>以整数17为随机数种子，获取用户输入整数N为长度，产生3个长度为N位的密码，密码的每位是一个数字。每个密码单独一行输出。‪‬‪‬‪‬‪‬‪‬‮‬‪‬‫‬‪‬‪‬‪‬‪‬‪‬‮‬‪‬‪‬‪‬‪‬‪‬‪‬‪‬‮‬‪‬‮‬‪‬‪‬‪‬‪‬‪‬‮‬‫‬‭‬‪‬‪‬‪‬‪‬‪‬‮‬‭‬‪‬‪‬‪‬‪‬‪‬‪‬‮‬‭‬‫‬‪‬‪‬‪‬‪‬‪‬‮‬‫‬‫‬<br>产生密码采用random.randint()函数。</p>
+    <content><![CDATA[<h4 id="随机密码生成"><a href="#随机密码生成" class="headerlink" title="随机密码生成"></a>随机密码生成</h4><h5 id="描述"><a href="#描述" class="headerlink" title="描述"></a>描述</h5><p>补充编程模板中代码，完成以下功能：</p>
+<p>以整数17为随机数种子，获取用户输入整数N为长度，产生3个长度为N位的密码，密码的每位是一个数字。每个密码单独一行输出。产生的密码采用random.ranfint()函数。</p>
 <span id="more"></span>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">import random</span><br><span class="line"></span><br><span class="line">def genpwd(length):</span><br><span class="line">    min = pow(10, length - 1)</span><br><span class="line">    max = pow(10, length) -1  # 位数减1</span><br><span class="line">    return &quot;&#123;&#125;&quot;.format(random.randint(a, b)) # 返回值到print</span><br><span class="line">length = eval(input())</span><br><span class="line">random.seed(17)</span><br><span class="line">for i in range(3):</span><br><span class="line">    print(genpwd(length))</span><br></pre></td></tr></table></figure>
 ]]></content>
