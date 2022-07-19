@@ -264,9 +264,9 @@
     <url>/2022/07/20/%E7%A7%91%E8%B5%AB%E9%9B%AA%E8%8A%B1%E5%B0%8F%E5%8C%85%E8%A3%B9/</url>
     <content><![CDATA[<h3 id="科赫曲线"><a href="#科赫曲线" class="headerlink" title="科赫曲线"></a>科赫曲线</h3><center><img src="https://img1.imgtp.com/2022/07/18/1ioMOMuZ.png" alt="科赫曲线-1.png" title="科赫曲线-1.png" /></center>
 <center><img src="https://img1.imgtp.com/2022/07/18/mW31Rv0Y.png" alt="科赫曲线-2.png" title="科赫曲线-2.png" /></center>
+<span id="more"></span>
 <center><img src="https://img1.imgtp.com/2022/07/18/Ucxf2Slr.png" alt="科赫曲线-3.png" title="科赫曲线-3.png" /></center>
 
-<span id="more"></span>
 
 <h4 id="科赫曲线绘制方法"><a href="#科赫曲线绘制方法" class="headerlink" title="科赫曲线绘制方法"></a>科赫曲线绘制方法</h4><p>一条直线均分为三段，去掉中间部分，然后在中间部分凸起一个等边三角形。下一阶科赫曲线时把上一阶的每条线段再做一次科赫变换。</p>
 <p>n阶科赫曲线对n-1阶科赫曲线形成递归链条。</p>
