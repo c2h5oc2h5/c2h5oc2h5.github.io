@@ -237,6 +237,8 @@
 <h5 id="生成可执行文件命令"><a href="#生成可执行文件命令" class="headerlink" title="生成可执行文件命令"></a>生成可执行文件命令</h5><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">pyinstaller -F xx.py</span><br></pre></td></tr></table></figure>
 <center><img src="https://s1.328888.xyz/2022/07/18/NZq9U.png" alt="NZq9U.png" border="0" /></center>
 
+<span id="more"></span>
+
 <h5 id="清理打包临时文件"><a href="#清理打包临时文件" class="headerlink" title="清理打包临时文件"></a>清理打包临时文件</h5><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">pyinstaller --clean xx.py</span><br></pre></td></tr></table></figure>
 <h5 id="指定打包程序的图标文件icon"><a href="#指定打包程序的图标文件icon" class="headerlink" title="指定打包程序的图标文件icon"></a>指定打包程序的图标文件icon</h5><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">pyinstaller -i &lt;图标文件名.ico&gt; -F xx.py</span><br></pre></td></tr></table></figure>
 <center><img src="https://img1.imgtp.com/2022/07/18/OMSbv7da.png" alt="屏幕截图 2022-07-18 121949.png" title="屏幕截图 2022-07-18 121949.png" /></center>
