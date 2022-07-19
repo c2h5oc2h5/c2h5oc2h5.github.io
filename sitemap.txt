@@ -6,6 +6,7 @@ https://c2h5oc2h5.github.io/2022/07/19/%E6%95%B0%E7%A0%81%E7%AE%A1%E6%98%BE%E7%A
 https://c2h5oc2h5.github.io/categories/index.html
 https://c2h5oc2h5.github.io/tags/index.html
 https://c2h5oc2h5.github.io/2022/07/19/hello-world/
+https://c2h5oc2h5.github.io/2022/07/20/%E7%AC%AC%E4%B8%89%E6%96%B9%E5%BA%93pyinstaller/
 https://c2h5oc2h5.github.io/
 https://c2h5oc2h5.github.io/tags/python/
 https://c2h5oc2h5.github.io/categories/Code/
