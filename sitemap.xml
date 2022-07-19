@@ -83,6 +83,13 @@
 
   
   <url>
+    <loc>https://c2h5oc2h5.github.io/categories/Blog/</loc>
+    <lastmod>2022-07-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://c2h5oc2h5.github.io/categories/Code/</loc>
     <lastmod>2022-07-19</lastmod>
     <changefreq>weekly</changefreq>

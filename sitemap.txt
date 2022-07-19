@@ -7,4 +7,5 @@ https://c2h5oc2h5.github.io/tags/index.html
 https://c2h5oc2h5.github.io/2022/07/19/hello-world/
 https://c2h5oc2h5.github.io/
 https://c2h5oc2h5.github.io/tags/python/
+https://c2h5oc2h5.github.io/categories/Blog/
 https://c2h5oc2h5.github.io/categories/Code/
