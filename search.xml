@@ -230,6 +230,27 @@
       </tags>
   </entry>
   <entry>
+    <title>科赫曲线</title>
+    <url>/2022/07/20/%E7%A7%91%E8%B5%AB%E9%9B%AA%E8%8A%B1%E5%B0%8F%E5%8C%85%E8%A3%B9/</url>
+    <content><![CDATA[<h3 id="科赫曲线"><a href="#科赫曲线" class="headerlink" title="科赫曲线"></a>科赫曲线</h3><center><img src="https://img1.imgtp.com/2022/07/18/1ioMOMuZ.png" alt="科赫曲线-1.png" title="科赫曲线-1.png" /></center>
+<center><img src="https://img1.imgtp.com/2022/07/18/mW31Rv0Y.png" alt="科赫曲线-2.png" title="科赫曲线-2.png" /></center>
+<center><img src="https://img1.imgtp.com/2022/07/18/Ucxf2Slr.png" alt="科赫曲线-3.png" title="科赫曲线-3.png" /></center>
+
+<span id="more"></span>
+
+<h4 id="科赫曲线绘制方法"><a href="#科赫曲线绘制方法" class="headerlink" title="科赫曲线绘制方法"></a>科赫曲线绘制方法</h4><p>一条直线均分为三段，去掉中间部分，然后在中间部分凸起一个等边三角形。下一阶科赫曲线时把上一阶的每条线段再做一次科赫变换。</p>
+<p>n阶科赫曲线对n-1阶科赫曲线形成递归链条。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">#kochDrawV1.py</span><br><span class="line">#  从N阶一直传递到0阶寻找答案，然后再返回每一阶的值</span><br><span class="line">import turtle as t</span><br><span class="line">def koch(size, n):</span><br><span class="line">    if n == 0:</span><br><span class="line">        t.fd(size)</span><br><span class="line">    else:</span><br><span class="line">        for angle in [0, 60, -120, 60]:</span><br><span class="line">            t.left(angle)</span><br><span class="line">            koch(size/3, n-1)</span><br><span class="line"></span><br><span class="line">def main():</span><br><span class="line">    t.setup(600, 600)</span><br><span class="line">    t.penup()</span><br><span class="line">    t.goto(-200, 100)</span><br><span class="line">    t.pendown()</span><br><span class="line">    t.pensize(2)</span><br><span class="line">    #koch(600, 3)  #3阶科赫曲线</span><br><span class="line">    level = 3</span><br><span class="line">    koch(400, level)</span><br><span class="line">    t.right(120)</span><br><span class="line">    koch(400, level)</span><br><span class="line">    t.right(120)</span><br><span class="line">    koch(400, level)</span><br><span class="line">    t.hideturtle()</span><br><span class="line">main()</span><br></pre></td></tr></table></figure>
+<center><img src="https://img1.imgtp.com/2022/07/18/LgspXXLp.png" alt="科赫曲线-4.png" title="科赫曲线-4.png" /></center>
+]]></content>
+      <categories>
+        <category>Code</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Pyinstaller库安装与使用</title>
     <url>/2022/07/20/%E7%AC%AC%E4%B8%89%E6%96%B9%E5%BA%93pyinstaller/</url>
     <content><![CDATA[<p>Pyinstaller库：将.py源代码封装成可执行文件</p>
