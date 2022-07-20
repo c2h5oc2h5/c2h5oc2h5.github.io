@@ -93,47 +93,6 @@
       </categories>
   </entry>
   <entry>
-    <title>NexT主题设置</title>
-    <url>/2022/07/20/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E4%BA%8C%EF%BC%9ANexT%E4%B8%BB%E9%A2%98%E7%9B%B8%E5%85%B3%E8%AE%BE%E7%BD%AEbeta/</url>
-    <content><![CDATA[<h4 id="安装NexT"><a href="#安装NexT" class="headerlink" title="安装NexT"></a>安装NexT</h4><p>在你的博客根目录</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ git clone https://github.com/iissnan/hexo-theme-next themes/next</span><br></pre></td></tr></table></figure>
-<p>不同版本的NexT配置文件略有不同，本次使用的是hexo-theme-next-7.8.0版本。</p>
-<p>建议下载nop++配合使用修改配置文件，使用快捷键Ctrl+F可快速定位到修改的地方。</p>
-<p>配置文件有两个，一个是Hexo的，另一个是NexT的，名字都是_config.yml，下面“配置文件”非另行说明即默认为next文件下的配置文件。</p>
-<span id="more"></span>
-<h4 id="启用主题"><a href="#启用主题" class="headerlink" title="启用主题"></a>启用主题</h4><p>修改博客根目录里配置文件_config.yml的theme：next(注：将上一步克隆到本地的NexT文件拷贝到博客根目录的themes文件夹里，并改名为next)</p>
-<h4 id="主题设定"><a href="#主题设定" class="headerlink" title="主题设定"></a>主题设定</h4><p>打开next里的配置文件_config.yml，修改下面即可选择不同的博客主题Muse、Mist、Pisces、Gemini（删除#）</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">#  Scheme Settings</span><br><span class="line">#  Schemes</span><br><span class="line">#scheme: Muse</span><br><span class="line">#scheme: Mist</span><br><span class="line">#scheme: Pisces</span><br><span class="line">scheme: Gemini</span><br></pre></td></tr></table></figure>
-<h4 id="设置语言"><a href="#设置语言" class="headerlink" title="设置语言"></a>设置语言</h4><p>博客根目录下的配置文件里的</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">language: zh-CN</span><br></pre></td></tr></table></figure>
-<h4 id="设置菜单"><a href="#设置菜单" class="headerlink" title="设置菜单"></a>设置菜单</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">menu:</span><br><span class="line">  home: /                   # 首页</span><br><span class="line">  archives: /archives       # 归档（整理所有博客，按时间排列）</span><br><span class="line">  #about: /about            # 关于</span><br><span class="line">  #categories: /categories  # 分类（相当于一本书）比如：编程语言</span><br><span class="line">  tags: /tags               # 标签（相当于书的目录）比如：C、C++、Python···</span><br><span class="line">  #commonweal: /404.html    # 公益404</span><br></pre></td></tr></table></figure>
-<h4 id="设置侧栏"><a href="#设置侧栏" class="headerlink" title="设置侧栏"></a>设置侧栏</h4><p>修改配置文件里的sidebar.position 的值：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">left - 靠左放置</span><br><span class="line">right - 靠右放置</span><br></pre></td></tr></table></figure>
-<p>设置侧栏显示的时机，修改 sidebar.display 的值：post - 默认行为，在文章页面（拥有目录列表）时显示、always - 在所有页面中都显示、hide - 在所有页面中都隐藏（可以手动展开）、remove - 完全移除。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">sideebar:</span><br><span class="line">  display: post</span><br></pre></td></tr></table></figure>
-<h4 id="设置头像"><a href="#设置头像" class="headerlink" title="设置头像"></a>设置头像</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">avatar: http://example.com/avatar.png</span><br></pre></td></tr></table></figure>
-<p>头像文件位于next&#x2F;source&#x2F;images&#x2F; 目录下</p>
-<h4 id="设置作者昵称、站点描述"><a href="#设置作者昵称、站点描述" class="headerlink" title="设置作者昵称、站点描述"></a>设置作者昵称、站点描述</h4><p>博客根目录下的配置文件</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># Site</span><br><span class="line">title:          # 标题</span><br><span class="line">subtitle:       # 副标题</span><br><span class="line">description:    # 一句话描述</span><br><span class="line">keywords:       # 关键字</span><br><span class="line">author:         # 作者昵称</span><br><span class="line">language: zh-CN # 语言</span><br></pre></td></tr></table></figure>
-<h4 id="添加标签页面"><a href="#添加标签页面" class="headerlink" title="添加标签页面"></a>添加标签页面</h4><p>在博客根目录下git bash here</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ hexo new page tags</span><br></pre></td></tr></table></figure>
-<p>会在博客根目录source文件夹下生成tags文件夹，修改里面的index文件：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: 标签</span><br><span class="line">date: # 默认值</span><br><span class="line">type: &quot;tags&quot;</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-<p>注：如果集成评论功能， 若需要关闭某篇文章的评论功能，可以在该文章里请添加 comments 并将值设置为 false，如果想要将分类页面的评论关闭就修改index文件，如：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: 标签</span><br><span class="line">date: 2014-12-22 12:39:04</span><br><span class="line">type: &quot;tags&quot;</span><br><span class="line">comments: false</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-<h4 id="添加分类页面"><a href="#添加分类页面" class="headerlink" title="添加分类页面"></a>添加分类页面</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ hexo new page categories</span><br></pre></td></tr></table></figure>
-<p>会在博客根目录source文件夹下生成categories文件夹，修改里面的index文件：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: 分类</span><br><span class="line">date: # 默认值</span><br><span class="line">type: &quot;categories&quot;</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-<p>关闭方法同上。</p>
-<h4 id="设置代码高亮主题"><a href="#设置代码高亮主题" class="headerlink" title="设置代码高亮主题"></a>设置代码高亮主题</h4><p>NexT 默认使用的是 白色的 normal 主题，可选的值有 normal，night， night blue， night bright， night eighties：</p>
-<center><a href="https://sm.ms/image/VHxIiTY1FLtXWjp" target="_blank"><img src="https://s2.loli.net/2022/07/20/VHxIiTY1FLtXWjp.png" /></a></center>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">codeblock:</span><br><span class="line">  highlight_theme: night eighties</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>Blog</category>
-      </categories>
-  </entry>
-  <entry>
     <title>桃夭</title>
     <url>/2022/07/20/%E6%A1%83%E5%A4%AD/</url>
     <content><![CDATA[<h5 id="桃夭"><a href="#桃夭" class="headerlink" title="桃夭"></a><center>桃夭</center></h5><center>佚名 〔先秦〕</center>
