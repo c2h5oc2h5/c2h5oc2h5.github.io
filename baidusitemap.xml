@@ -1,15 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://c2h5oc2h5.github.io/2022/07/20/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E4%BA%8C%EF%BC%9ANexT%E4%B8%BB%E9%A2%98%E7%9B%B8%E5%85%B3%E8%AE%BE%E7%BD%AEbeta/</loc>
-    <lastmod>2022-07-20</lastmod>
-  </url>
-  <url>
-    <loc>https://c2h5oc2h5.github.io/2022/07/20/%E6%A1%83%E5%A4%AD/</loc>
-    <lastmod>2022-07-20</lastmod>
-  </url>
-  <url>
     <loc>https://c2h5oc2h5.github.io/2022/07/20/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E4%B8%80%EF%BC%9A%E6%A1%86%E6%9E%B6%E9%80%89%E6%8B%A9/</loc>
+    <lastmod>2022-07-20</lastmod>
+  </url>
+  <url>
+    <loc>https://c2h5oc2h5.github.io/2022/07/20/hello-world/</loc>
     <lastmod>2022-07-20</lastmod>
   </url>
   <url>
@@ -17,7 +13,11 @@
     <lastmod>2022-07-20</lastmod>
   </url>
   <url>
-    <loc>https://c2h5oc2h5.github.io/2022/07/20/hello-world/</loc>
+    <loc>https://c2h5oc2h5.github.io/2022/07/20/%E6%A1%83%E5%A4%AD/</loc>
+    <lastmod>2022-07-20</lastmod>
+  </url>
+  <url>
+    <loc>https://c2h5oc2h5.github.io/2022/07/20/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E4%BA%8C%EF%BC%9ANexT%E4%B8%BB%E9%A2%98%E7%9B%B8%E5%85%B3%E8%AE%BE%E7%BD%AEbeta/</loc>
     <lastmod>2022-07-20</lastmod>
   </url>
 </urlset> 
