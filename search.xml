@@ -13,6 +13,18 @@
       </tags>
   </entry>
   <entry>
+    <title>3.2daydayup举一反三：三天打鱼两天晒网式学习</title>
+    <url>/2022/07/22/3.2daydayup/</url>
+    <content><![CDATA[<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># daydayupQ5.py</span><br><span class="line"># 三天打鱼两天晒网式学习</span><br><span class="line"># def保留字用于定义函数,本次返回一个dayup值</span><br><span class="line">def dayUP(df):</span><br><span class="line">    dayup = 1</span><br><span class="line">    for i in range(365):</span><br><span class="line">        if i % 3 in [1,2]:  # 120120120....</span><br><span class="line">            dayup = dayup * (1 - 0.01)</span><br><span class="line">        else:</span><br><span class="line">            dayup = dayup * (1 + df)  # 此处是自定义变量</span><br><span class="line">    return dayup  # 严格缩进，与for语句是并行结构 给出返回值</span><br><span class="line">dayfactor = 0.01</span><br><span class="line">#dd = 1</span><br><span class="line">A = pow(1+dayfactor, 365)</span><br><span class="line">#while dayUP(df) &lt; A:  # 执行上面的for循环,NameError: name &#x27;df&#x27; is not defined</span><br><span class="line">#while dayUP(dd) &lt; A:  # 工作日努力值：0.010</span><br><span class="line">while dayUP(dayfactor) &lt; A:</span><br><span class="line">    dayfactor += 0.001</span><br><span class="line">print(&quot;工作日努力值：&#123;:.3f&#125;&quot;.format(dayfactor))</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>Code</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Hello World</title>
     <url>/2022/07/22/hello-world/</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
