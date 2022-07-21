@@ -207,6 +207,28 @@
       </categories>
   </entry>
   <entry>
+    <title>博客搭建六：绑定自己域名的方法</title>
+    <url>/2022/07/22/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E5%85%AD%EF%BC%9A%E5%8D%9A%E5%AE%A2%E7%BB%91%E5%AE%9A%E8%87%AA%E5%B7%B1%E5%9F%9F%E5%90%8D%E7%9A%84%E6%96%B9%E6%B3%95/</url>
+    <content><![CDATA[<p>嗯，为什么买域名呢？属实是为醋包饺子了。</p>
+<p>本意想借助七牛云搭建一个自己的图床，但是域名需要备案，暂时没有买云服务器的打算，买都买了，那就给博客换个域名，也好记。</p>
+<span id="more"></span>
+<p>下面是针对有域名前提下进行的设置：</p>
+<p>首先给自己的域名添加GitHub解析，cmd命令里输入：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">C:\Users\kai&gt;ping github.io</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">正在 Ping github.io [185.199.111.153] 具有 32 字节的数据:</span><br><span class="line">来自 185.199.111.153 的回复: 字节=32 时间=78ms TTL=53</span><br><span class="line">来自 185.199.111.153 的回复: 字节=32 时间=77ms TTL=53</span><br><span class="line">来自 185.199.111.153 的回复: 字节=32 时间=78ms TTL=53</span><br><span class="line">来自 185.199.111.153 的回复: 字节=32 时间=79ms TTL=53</span><br><span class="line"></span><br><span class="line">185.199.111.153 的 Ping 统计信息:</span><br><span class="line">    数据包: 已发送 = 4，已接收 = 4，丢失 = 0 (0% 丢失)，</span><br><span class="line">往返行程的估计时间(以毫秒为单位):</span><br><span class="line">    最短 = 77ms，最长 = 79ms，平均 = 78ms</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">C:\Users\kai&gt;ping www.github.io</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">正在 Ping www.github.io [2606:50c0:8000::153] 具有 32 字节的数据:</span><br><span class="line">来自 2606:50c0:8000::153 的回复: 时间=90ms</span><br><span class="line">来自 2606:50c0:8000::153 的回复: 时间=94ms</span><br><span class="line">请求超时。</span><br><span class="line">来自 2606:50c0:8000::153 的回复: 时间=82ms</span><br><span class="line"></span><br><span class="line">2606:50c0:8000::153 的 Ping 统计信息:</span><br><span class="line">    数据包: 已发送 = 4，已接收 = 3，丢失 = 1 (25% 丢失)，</span><br><span class="line">往返行程的估计时间(以毫秒为单位):</span><br><span class="line">    最短 = 82ms，最长 = 94ms，平均 = 88ms</span><br></pre></td></tr></table></figure>
+<p>将上面两个IP值在你的域名管理里进行解析，然后再添加一个你的博客仓库地址的解析（类型是CNAME）。</p>
+<center><a href="https://sm.ms/image/HiELMjpghxseaGY" target="_blank"><img src="https://s2.loli.net/2022/07/22/HiELMjpghxseaGY.png" /></a></center>
+
+<p>然后你就可以用你的域名登录你的博客了。</p>
+<p>域名的另一个用途：注册企业邮箱，现阶段名字全拼的邮箱基本注册不到了，这时企业邮箱是个好的选择，名字的全拼加上你注册的喜欢的额域名，应该是现阶段最理想的搭配。</p>
+]]></content>
+      <categories>
+        <category>Blog</category>
+      </categories>
+  </entry>
+  <entry>
     <title>博客搭建四：将自己的博客加入百度和谷歌收录的方法</title>
     <url>/2022/07/22/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E5%9B%9B%EF%BC%9A%E5%B0%86%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2%E5%8A%A0%E5%85%A5%E7%99%BE%E5%BA%A6%E5%92%8C%E8%B0%B7%E6%AD%8C%E6%94%B6%E5%BD%95%E7%9A%84%E6%96%B9%E6%B3%95/</url>
     <content><![CDATA[<p>到了这里，我们的博客已经初步搭建好了，可以在里面创建内容，打造专属自己的博客自留地。</p>
