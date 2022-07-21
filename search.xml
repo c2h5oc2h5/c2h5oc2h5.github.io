@@ -194,6 +194,50 @@
       </categories>
   </entry>
   <entry>
+    <title>博客搭建四：将自己的博客加入百度和谷歌收录的方法</title>
+    <url>/2022/07/22/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E5%9B%9B%EF%BC%9A%E5%B0%86%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2%E5%8A%A0%E5%85%A5%E7%99%BE%E5%BA%A6%E5%92%8C%E8%B0%B7%E6%AD%8C%E6%94%B6%E5%BD%95%E7%9A%84%E6%96%B9%E6%B3%95/</url>
+    <content><![CDATA[<p>到了这里，我们的博客已经初步搭建好了，可以在里面创建内容，打造专属自己的博客自留地。</p>
+<span id="more"></span>
+<h4 id="如何写博客？"><a href="#如何写博客？" class="headerlink" title="如何写博客？"></a>如何写博客？</h4><p>在博客根目录\source_posts里添加.md文件，然后更新三连即可。挑选一款自己喜欢的markdown写作软件，然后就可以开始创作了，这里推荐使用Atom,支持实时预览。<br><centr><a href="https://sm.ms/image/NMEkrpXyRm7n2Jv" target="_blank"><img src="https://s2.loli.net/2022/07/21/NMEkrpXyRm7n2Jv.png" /></a></center><br>博客的意义在于内容，内容的意义在于创作。（不做文字缝合怪.jpg）</p>
+<h4 id="如何让别人在搜索引擎上看到自己"><a href="#如何让别人在搜索引擎上看到自己" class="headerlink" title="如何让别人在搜索引擎上看到自己"></a>如何让别人在搜索引擎上看到自己</h4><p>我们的博客有了内容，如果我们想分享自己的博客内容，除了直接访问博客地址，在搜索引擎上是搜不到的，我们要将自己的博客主动加入百度或谷歌收录，这样别人才能搜到我们的博客内容。</p>
+<h4 id="百度收录"><a href="#百度收录" class="headerlink" title="百度收录"></a>百度收录</h4><h5 id="注册百度账号"><a href="#注册百度账号" class="headerlink" title="注册百度账号"></a>注册百度账号</h5><p>地址：<a href="https://ziyuan.baidu.com/">https://ziyuan.baidu.com</a></p>
+<h5 id="验证网站所有权"><a href="#验证网站所有权" class="headerlink" title="验证网站所有权"></a>验证网站所有权</h5><p>地址：<a href="https://ziyuan.baidu.com/site/siteadd">https://ziyuan.baidu.com/site/siteadd</a><br>输入你Github Pages页面（打开你的博客存放仓库-&gt;设置，就可以找到了），上面有你的博客地址。<br>一般是<a href="https://username.github.io/">https://username.github.io</a></p>
+<center><a href="https://sm.ms/image/itLqfeQywZBsRSj" target="_blank"><img src="https://s2.loli.net/2022/07/20/itLqfeQywZBsRSj.png" alt="博客搭建一_1.png"></a></center>
+
+<p>一路按照提示进行下一步，到第三步验证网站，建议使用HTML标签验证（如果你有注册过域名，选择CANME验证更为简单）</p>
+<center><a href="https://sm.ms/image/Cn1E25XmgSU4xJ8" target="_blank"><img src="https://s2.loli.net/2022/07/21/Cn1E25XmgSU4xJ8.png" ></a></center>
+
+<p>在你的博客根目录\themes\next\layout_partials\head里找到head.swig文件，在开头添加页面要你添加的代码即可完成验证。</p>
+<h5 id="下面开始配置文件"><a href="#下面开始配置文件" class="headerlink" title="下面开始配置文件"></a>下面开始配置文件</h5><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">baidu_site_verification: true</span><br></pre></td></tr></table></figure>
+<p>然后在你的博客根目录\themes\next\layout_partials\head里的head.swig文件里添加：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% if theme.baidu_site_verification %&#125;</span><br><span class="line">  &lt;meta name=&quot;baidu-site-verification&quot; content=&quot;你的token&quot; /&gt;</span><br><span class="line">&#123;% endif %&#125;</span><br></pre></td></tr></table></figure>
+<p>最后三连更新你的博客内容。</p>
+<h5 id="验证是否成功"><a href="#验证是否成功" class="headerlink" title="验证是否成功"></a>验证是否成功</h5><p>打开你的博客网页，F12打开页面检查百度让你添加的token是否显示，如图红线所示位置：</p>
+<center><a href="https://sm.ms/image/ODzYBu5ZnC4PHIA" target="_blank"><img src="https://s2.loli.net/2022/07/21/ODzYBu5ZnC4PHIA.png" /></a></center>
+
+<p>（注：百度审核一般要1-3天才可以手动提交收录）</p>
+<h4 id="生成站点地图"><a href="#生成站点地图" class="headerlink" title="生成站点地图"></a>生成站点地图</h4><h5 id="安装插件"><a href="#安装插件" class="headerlink" title="安装插件"></a>安装插件</h5><p>在博客根目录cmd以下命令</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-generator-sitemap --save</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-generator-sitemap --save</span><br></pre></td></tr></table></figure>
+<p>修改站点博客根目录下的配置文件_config.yml中的URL为你的博客首页地址，这样是为了保证生成的sitemap.xml文件中地址正确。</p>
+<p>修改主题目录下的配置文件：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 自动生成sitemap</span><br><span class="line">sitemap:</span><br><span class="line">  path: sitemap.xml</span><br><span class="line">baidusitemap:</span><br><span class="line">  path: baidusitemap.xml</span><br></pre></td></tr></table></figure>
+<p>执行hexo g，正常情况下会在你的博客根目录下的public目录下多出两个文件，分别是sitemap.xml和baidusitemap.xml。</p>
+<p>站点地图生成后，只需要等待百度自动抓取或者配置自动配送或者主动推送。</p>
+<h4 id="如何设置主动推送"><a href="#如何设置主动推送" class="headerlink" title="如何设置主动推送"></a>如何设置主动推送</h4><p>修改主题配置文件，将baidu_push修改为true，如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">baidu_push: true</span><br></pre></td></tr></table></figure>
+<p>修改themes\next\layout_scripts\baidu_push.swig（没有这个文件则创建），添加以下代码：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% if theme.baidu_push %&#125;</span><br><span class="line">&lt;script&gt;</span><br><span class="line">(function()&#123;</span><br><span class="line">    var bp = document.createElement(&#x27;script&#x27;);</span><br><span class="line">    var curProtocol = window.location.protocol.split(&#x27;:&#x27;)[0];</span><br><span class="line">    if (curProtocol === &#x27;https&#x27;) &#123;</span><br><span class="line">        bp.src = &#x27;https://zz.bdstatic.com/linksubmit/push.js&#x27;;        </span><br><span class="line">    &#125;</span><br><span class="line">    else &#123;</span><br><span class="line">        bp.src = &#x27;http://push.zhanzhang.baidu.com/push.js&#x27;;</span><br><span class="line">    &#125;</span><br><span class="line">    var s = document.getElementsByTagName(&quot;script&quot;)[0];</span><br><span class="line">    s.parentNode.insertBefore(bp, s);</span><br><span class="line">&#125;)();</span><br><span class="line">&lt;/script&gt;</span><br><span class="line">&#123;% endif %&#125;</span><br></pre></td></tr></table></figure>
+<p>以上配置完成后，每次访问博客首页会自动向百度提交，不用再手动提交了。</p>
+<h4 id="谷歌搜录"><a href="#谷歌搜录" class="headerlink" title="谷歌搜录"></a>谷歌搜录</h4><p>需要科学上网访问：<a href="https://search.google.com/search-console/about%EF%BC%8C%E5%90%8C%E6%97%B6%E9%9C%80%E8%A6%81%E8%B0%B7%E6%AD%8C%E8%B4%A6%E5%8F%B7%E3%80%82">https://search.google.com/search-console/about，同时需要谷歌账号。</a></p>
+<p>前面三步和百度差不多，三种验证选一个即可，你的博客网站成功加入后，一天左右的时间就可以提交你的网站地图了https:&#x2F;&#x2F;你的博客网站&#x2F;sitemap.xml，如下图红线位置:</p>
+<center><a href="https://sm.ms/image/suTtibF2g5orjS9" target="_blank"><img src="https://s2.loli.net/2022/07/21/suTtibF2g5orjS9.png" /></a></center?
+]]></content>
+      <categories>
+        <category>Blog</category>
+      </categories>
+  </entry>
+  <entry>
     <title>桃夭</title>
     <url>/2022/07/22/%E6%A1%83%E5%A4%AD/</url>
     <content><![CDATA[<h5 id="桃夭"><a href="#桃夭" class="headerlink" title="桃夭"></a><center>桃夭</center></h5><center>佚名 〔先秦〕</center>
