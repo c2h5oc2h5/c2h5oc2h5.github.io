@@ -230,6 +230,27 @@
       </tags>
   </entry>
   <entry>
+    <title>5.5 python代码与函数复用：科赫曲线</title>
+    <url>/2022/07/22/5.5%E7%A7%91%E8%B5%AB%E9%9B%AA%E8%8A%B1%E5%B0%8F%E5%8C%85%E8%A3%B9/</url>
+    <content><![CDATA[<h3 id="科赫曲线"><a href="#科赫曲线" class="headerlink" title="科赫曲线"></a>科赫曲线</h3><center><a href="https://sm.ms/image/qwjf7LmGWVY6bHQ" target="_blank"><img src="https://s2.loli.net/2022/07/22/qwjf7LmGWVY6bHQ.png" /></a></a></center>
+<center><a href="https://sm.ms/image/wDMUB3C7jOsaf6o" target="_blank"><img src="https://s2.loli.net/2022/07/22/wDMUB3C7jOsaf6o.png" /></a></center>
+<span id="more"></span>
+<center><a href="https://sm.ms/image/RMbtm1QdCVloGBL" target="_blank"><img src="https://s2.loli.net/2022/07/22/RMbtm1QdCVloGBL.png" /></a></center>
+
+
+<h4 id="科赫曲线绘制方法"><a href="#科赫曲线绘制方法" class="headerlink" title="科赫曲线绘制方法"></a>科赫曲线绘制方法</h4><p>一条直线均分为三段，去掉中间部分，然后在中间部分凸起一个等边三角形。下一阶科赫曲线时把上一阶的每条线段再做一次科赫变换。</p>
+<p>n阶科赫曲线对n-1阶科赫曲线形成递归链条。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">#kochDrawV1.py</span><br><span class="line">#  从N阶一直传递到0阶寻找答案，然后再返回每一阶的值</span><br><span class="line">import turtle as t</span><br><span class="line">def koch(size, n):</span><br><span class="line">    if n == 0:</span><br><span class="line">        t.fd(size)</span><br><span class="line">    else:</span><br><span class="line">        for angle in [0, 60, -120, 60]:</span><br><span class="line">            t.left(angle)</span><br><span class="line">            koch(size/3, n-1)</span><br><span class="line"></span><br><span class="line">def main():</span><br><span class="line">    t.setup(600, 600)</span><br><span class="line">    t.penup()</span><br><span class="line">    t.goto(-200, 100)</span><br><span class="line">    t.pendown()</span><br><span class="line">    t.pensize(2)</span><br><span class="line">    #koch(600, 3)  #3阶科赫曲线</span><br><span class="line">    level = 3</span><br><span class="line">    koch(400, level)</span><br><span class="line">    t.right(120)</span><br><span class="line">    koch(400, level)</span><br><span class="line">    t.right(120)</span><br><span class="line">    koch(400, level)</span><br><span class="line">    t.hideturtle()</span><br><span class="line">main()</span><br></pre></td></tr></table></figure>
+<center><a href="https://sm.ms/image/9lP3hyx2fsHCniK" target="_blank"><img src="https://s2.loli.net/2022/07/22/9lP3hyx2fsHCniK.png" /></a></center>
+]]></content>
+      <categories>
+        <category>Code</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Hello World</title>
     <url>/2022/07/22/hello-world/</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
@@ -247,6 +268,22 @@
 <h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
 
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>写在前面</title>
+    <url>/2022/07/22/%E4%B8%AA%E4%BA%BA%E4%BB%8B%E7%BB%8D/</url>
+    <content><![CDATA[<center>为什么要搭建自己的博客呢？</center>
+<center>契机</center>
+<center>对创作做个备份。</center>
+<center>知乎莫名奇妙就限制了账号，也不说明原因，及时止损，将内容搬过来，留下点足迹。</center>
+<span id="more"></span>
+<center>话说封号不说明缘由的么，哎，人生苦短远离知乎</center>
+<center>互联网不是法外之地，遵纪守法是义务！</center>
+
+<center><img src="https://s1.328888.xyz/2022/07/18/NYr1F.webp"></center>
+<center>C2H5OC2H5</center>
+<center>好萌</center>
 ]]></content>
   </entry>
   <entry>
@@ -306,22 +343,6 @@
       <categories>
         <category>Blog</category>
       </categories>
-  </entry>
-  <entry>
-    <title>写在前面</title>
-    <url>/2022/07/22/%E4%B8%AA%E4%BA%BA%E4%BB%8B%E7%BB%8D/</url>
-    <content><![CDATA[<center>为什么要搭建自己的博客呢？</center>
-<center>契机</center>
-<center>对创作做个备份。</center>
-<center>知乎莫名奇妙就限制了账号，也不说明原因，及时止损，将内容搬过来，留下点足迹。</center>
-<span id="more"></span>
-<center>话说封号不说明缘由的么，哎，人生苦短远离知乎</center>
-<center>互联网不是法外之地，遵纪守法是义务！</center>
-
-<center><img src="https://s1.328888.xyz/2022/07/18/NYr1F.webp"></center>
-<center>C2H5OC2H5</center>
-<center>好萌</center>
-]]></content>
   </entry>
   <entry>
     <title>博客搭建三：Blog评论系统选择</title>
