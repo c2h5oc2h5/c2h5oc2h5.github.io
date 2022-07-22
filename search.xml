@@ -50,7 +50,7 @@
   </entry>
   <entry>
     <title>数码管显示时间</title>
-    <url>/2022/07/19/5.2%20%E6%95%B0%E7%A0%81%E7%AE%A1%E6%98%BE%E7%A4%BA%E6%97%B6%E9%97%B4/</url>
+    <url>/2022/07/22/5.2python%E6%95%B0%E7%A0%81%E7%AE%A1%E6%98%BE%E7%A4%BA/</url>
     <content><![CDATA[<p>利用python的turtle库来实现用7段数码管来显示时间</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 倒计时</span><br><span class="line"></span><br><span class="line">import turtle as t</span><br><span class="line">#t.speed(10) 调节画笔快慢</span><br><span class="line"></span><br><span class="line">def drawGap():#数码管间隔</span><br><span class="line">    t.penup()</span><br><span class="line">    t.fd(5)</span><br></pre></td></tr></table></figure>
 <span id="more"></span>  
@@ -187,19 +187,6 @@
       </categories>
   </entry>
   <entry>
-    <title>博客搭建五：图床选择</title>
-    <url>/2022/07/22/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E4%BA%94%EF%BC%9A%E5%9B%BE%E5%BA%8A%E9%80%89%E6%8B%A9/</url>
-    <content><![CDATA[<p>写博客离不开图床的支持，我还没找到合适的。</p>
-<p>GitHub：建个仓库当图床，需要进行CDN加速，有时候在markdown里使用外链，图片是裂开的，还在探索中······</p>
-<p>七牛云：需要一个备案的域名绑定空间，有免费的10G空间，对个人用户来说应该差不多。七牛云免费的域名只有一个月试用期，试用期过后会删除，里面的图片也会挂掉。另外，如果你的域名没有备案，你的图片外链在markdown里也是无法显示，也是裂开的。有一说一，七牛云客服还是很可以的，不是只是会上报收集问题的客服。另外那种说先买一个月云服务器进行备案的，这种做法也不稳妥，服务器到期后节点还是会掉的，到时候还是用不了。</p>
-<p>现在采用的是smms图床，邮箱注册，单用户有5G空间。微软邮箱可以添加10个别名，然后嗯，差不多就够用了，也方便管理。地址：<a href="https://sm.ms/">https://sm.ms/</a></p>
-<p>无论是什么图床，都最好做一个备份。</p>
-]]></content>
-      <categories>
-        <category>Blog</category>
-      </categories>
-  </entry>
-  <entry>
     <title>博客搭建二：NexT主题设置</title>
     <url>/2022/07/22/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E4%BA%8C%EF%BC%9ANexT%E4%B8%BB%E9%A2%98%E7%9B%B8%E5%85%B3%E8%AE%BE%E7%BD%AEbeta/</url>
     <content><![CDATA[<h4 id="安装NexT"><a href="#安装NexT" class="headerlink" title="安装NexT"></a>安装NexT</h4><p>在你的博客根目录</p>
@@ -267,6 +254,19 @@
 
 <h4 id="设置博客顶部加载条"><a href="#设置博客顶部加载条" class="headerlink" title="设置博客顶部加载条"></a>设置博客顶部加载条</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># Progress bar in the top during page loading.</span><br><span class="line">pace:</span><br><span class="line">  enable: true</span><br><span class="line">  # Themes list:</span><br><span class="line">  # big-counter | bounce | barber-shop | center-atom | center-circle | center-radar | center-simple</span><br><span class="line">  # corner-indicator | fill-left | flat-top | flash | loading-bar | mac-osx | material | minimal</span><br><span class="line">  theme: minimal</span><br></pre></td></tr></table></figure>
 <h4 id="（注：因为没有在云服务器上搭建，所以没有备份服务，如有备份需求，可酌情备份主题文件或博客内容，添加新功能时出了问题可溯流恢复，主题也可在新的博客直接使用，省去以后配置过程。）"><a href="#（注：因为没有在云服务器上搭建，所以没有备份服务，如有备份需求，可酌情备份主题文件或博客内容，添加新功能时出了问题可溯流恢复，主题也可在新的博客直接使用，省去以后配置过程。）" class="headerlink" title="（注：因为没有在云服务器上搭建，所以没有备份服务，如有备份需求，可酌情备份主题文件或博客内容，添加新功能时出了问题可溯流恢复，主题也可在新的博客直接使用，省去以后配置过程。）"></a>（注：因为没有在云服务器上搭建，所以没有备份服务，如有备份需求，可酌情备份主题文件或博客内容，添加新功能时出了问题可溯流恢复，主题也可在新的博客直接使用，省去以后配置过程。）</h4>]]></content>
+      <categories>
+        <category>Blog</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>博客搭建五：图床选择</title>
+    <url>/2022/07/22/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E4%BA%94%EF%BC%9A%E5%9B%BE%E5%BA%8A%E9%80%89%E6%8B%A9/</url>
+    <content><![CDATA[<p>写博客离不开图床的支持，我还没找到合适的。</p>
+<p>GitHub：建个仓库当图床，需要进行CDN加速，有时候在markdown里使用外链，图片是裂开的，还在探索中······</p>
+<p>七牛云：需要一个备案的域名绑定空间，有免费的10G空间，对个人用户来说应该差不多。七牛云免费的域名只有一个月试用期，试用期过后会删除，里面的图片也会挂掉。另外，如果你的域名没有备案，你的图片外链在markdown里也是无法显示，也是裂开的。有一说一，七牛云客服还是很可以的，不是只是会上报收集问题的客服。另外那种说先买一个月云服务器进行备案的，这种做法也不稳妥，服务器到期后节点还是会掉的，到时候还是用不了。</p>
+<p>现在采用的是smms图床，邮箱注册，单用户有5G空间。微软邮箱可以添加10个别名，然后嗯，差不多就够用了，也方便管理。地址：<a href="https://sm.ms/">https://sm.ms/</a></p>
+<p>无论是什么图床，都最好做一个备份。</p>
+]]></content>
       <categories>
         <category>Blog</category>
       </categories>
