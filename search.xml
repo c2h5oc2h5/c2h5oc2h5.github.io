@@ -245,7 +245,8 @@
 <p>将上面两个IP值在你的域名管理里进行解析，然后再添加一个你的博客仓库地址的解析（类型是CNAME）。</p>
 <center><a href="https://sm.ms/image/HiELMjpghxseaGY" target="_blank"><img src="https://s2.loli.net/2022/07/22/HiELMjpghxseaGY.png" /></a></center>
 
-<p>然后你就可以用你的域名登录你的博客了。</p>
+<p>然后，在你的博客根目录\source文件夹下新建CANME文本文档，在里面输入你的域名，类似xx.xxx,保存后把CANME的后缀删除。如果不操作这一步，你每次执行hexo clean就会清除你绑定的域名。</p>
+<p>到此，你就可以用你的域名登录你的博客了。</p>
 <p>域名的另一个用途：注册企业邮箱，现阶段名字全拼的邮箱基本注册不到了，这时企业邮箱是个好的选择，名字的全拼加上你注册的喜欢的额域名，应该是现阶段最理想的搭配。</p>
 ]]></content>
       <categories>
