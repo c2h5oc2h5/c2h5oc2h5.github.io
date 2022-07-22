@@ -25,21 +25,20 @@
     var CONFIG = {"hostname":"c2h5oc2h5.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"gitalk","storage":true,"lazyload":false,"nav":{"valine":{"order":-1}}},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="嗯，为什么买域名呢？属实是为醋包饺子了。 本意想借助七牛云搭建一个自己的图床，但是域名需要备案，暂时没有买云服务器的打算，买都买了，那就给博客换个域名，也好记。">
+  <meta name="description" content="有价星球货币使世界紧密联系，从繁华至蛮荒。 莎士比亚：金钱是个好士兵，有了它可以使人勇气百倍。 卢梭：我们手里的金钱是我们保持自由的工具。 马歇尔： 语言表达我们的思想，货币表达我们的欲望和财产，给予我们更多的活力和激情，帮助我们达成目标。 货币给物品定价，在很长时期是针对有形物品。对脑力发明产品的定价叫专利。 货币渐渐演变成资本，">
 <meta property="og:type" content="article">
-<meta property="og:title" content="博客搭建六：绑定自己域名的方法">
-<meta property="og:url" content="https://c2h5oc2h5.github.io/2022/07/22/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E5%85%AD%EF%BC%9A%E5%8D%9A%E5%AE%A2%E7%BB%91%E5%AE%9A%E8%87%AA%E5%B7%B1%E5%9F%9F%E5%90%8D%E7%9A%84%E6%96%B9%E6%B3%95/index.html">
+<meta property="og:title" content="通俗经济">
+<meta property="og:url" content="https://c2h5oc2h5.github.io/2022/07/23/%E9%80%9A%E4%BF%97%E7%BB%8F%E6%B5%8E%E5%AD%A6/index.html">
 <meta property="og:site_name" content="ZIYUE TECH">
-<meta property="og:description" content="嗯，为什么买域名呢？属实是为醋包饺子了。 本意想借助七牛云搭建一个自己的图床，但是域名需要备案，暂时没有买云服务器的打算，买都买了，那就给博客换个域名，也好记。">
+<meta property="og:description" content="有价星球货币使世界紧密联系，从繁华至蛮荒。 莎士比亚：金钱是个好士兵，有了它可以使人勇气百倍。 卢梭：我们手里的金钱是我们保持自由的工具。 马歇尔： 语言表达我们的思想，货币表达我们的欲望和财产，给予我们更多的活力和激情，帮助我们达成目标。 货币给物品定价，在很长时期是针对有形物品。对脑力发明产品的定价叫专利。 货币渐渐演变成资本，">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://s2.loli.net/2022/07/22/HiELMjpghxseaGY.png">
-<meta property="article:published_time" content="2022-07-21T19:39:25.170Z">
-<meta property="article:modified_time" content="2022-07-22T04:37:05.948Z">
+<meta property="article:published_time" content="2022-07-22T16:24:00.980Z">
+<meta property="article:modified_time" content="2022-07-22T16:31:23.401Z">
 <meta property="article:author" content="kay">
+<meta property="article:tag" content="经济学">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://s2.loli.net/2022/07/22/HiELMjpghxseaGY.png">
 
-<link rel="canonical" href="https://c2h5oc2h5.github.io/2022/07/22/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E5%85%AD%EF%BC%9A%E5%8D%9A%E5%AE%A2%E7%BB%91%E5%AE%9A%E8%87%AA%E5%B7%B1%E5%9F%9F%E5%90%8D%E7%9A%84%E6%96%B9%E6%B3%95/">
+<link rel="canonical" href="https://c2h5oc2h5.github.io/2022/07/23/%E9%80%9A%E4%BF%97%E7%BB%8F%E6%B5%8E%E5%AD%A6/">
 
 
 <script id="page-configurations">
@@ -52,7 +51,7 @@
   };
 </script>
 
-  <title>博客搭建六：绑定自己域名的方法 | ZIYUE TECH</title>
+  <title>通俗经济 | ZIYUE TECH</title>
   
 
 
@@ -202,7 +201,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://c2h5oc2h5.github.io/2022/07/22/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E5%85%AD%EF%BC%9A%E5%8D%9A%E5%AE%A2%E7%BB%91%E5%AE%9A%E8%87%AA%E5%B7%B1%E5%9F%9F%E5%90%8D%E7%9A%84%E6%96%B9%E6%B3%95/">
+    <link itemprop="mainEntityOfPage" href="https://c2h5oc2h5.github.io/2022/07/23/%E9%80%9A%E4%BF%97%E7%BB%8F%E6%B5%8E%E5%AD%A6/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.jpg">
@@ -215,7 +214,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          博客搭建六：绑定自己域名的方法
+          通俗经济
         </h1>
 
         <div class="post-meta">
@@ -226,7 +225,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2022-07-22 03:39:25 / 修改时间：12:37:05" itemprop="dateCreated datePublished" datetime="2022-07-22T03:39:25+08:00">2022-07-22</time>
+              <time title="创建时间：2022-07-23 00:24:00 / 修改时间：00:31:23" itemprop="dateCreated datePublished" datetime="2022-07-23T00:24:00+08:00">2022-07-23</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -234,12 +233,12 @@
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Blog/" itemprop="url" rel="index"><span itemprop="name">Blog</span></a>
+                  <a href="/categories/%E7%BB%8F%E6%B5%8E%E5%AD%A6/" itemprop="url" rel="index"><span itemprop="name">经济学</span></a>
                 </span>
             </span>
 
           
-            <span id="/2022/07/22/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E5%85%AD%EF%BC%9A%E5%8D%9A%E5%AE%A2%E7%BB%91%E5%AE%9A%E8%87%AA%E5%B7%B1%E5%9F%9F%E5%90%8D%E7%9A%84%E6%96%B9%E6%B3%95/" class="post-meta-item leancloud_visitors" data-flag-title="博客搭建六：绑定自己域名的方法" title="阅读次数">
+            <span id="/2022/07/23/%E9%80%9A%E4%BF%97%E7%BB%8F%E6%B5%8E%E5%AD%A6/" class="post-meta-item leancloud_visitors" data-flag-title="通俗经济" title="阅读次数">
               <span class="post-meta-item-icon">
                 <i class="fa fa-eye"></i>
               </span>
@@ -254,8 +253,8 @@
       </span>
       <span class="post-meta-item-text">Valine：</span>
     
-    <a title="valine" href="/2022/07/22/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E5%85%AD%EF%BC%9A%E5%8D%9A%E5%AE%A2%E7%BB%91%E5%AE%9A%E8%87%AA%E5%B7%B1%E5%9F%9F%E5%90%8D%E7%9A%84%E6%96%B9%E6%B3%95/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2022/07/22/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E5%85%AD%EF%BC%9A%E5%8D%9A%E5%AE%A2%E7%BB%91%E5%AE%9A%E8%87%AA%E5%B7%B1%E5%9F%9F%E5%90%8D%E7%9A%84%E6%96%B9%E6%B3%95/" itemprop="commentCount"></span>
+    <a title="valine" href="/2022/07/23/%E9%80%9A%E4%BF%97%E7%BB%8F%E6%B5%8E%E5%AD%A6/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2022/07/23/%E9%80%9A%E4%BF%97%E7%BB%8F%E6%B5%8E%E5%AD%A6/" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -265,7 +264,7 @@
                 <i class="fa fa-file-word-o"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>1k</span>
+              <span>161</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
@@ -284,21 +283,12 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>嗯，为什么买域名呢？属实是为醋包饺子了。</p>
-<p>本意想借助七牛云搭建一个自己的图床，但是域名需要备案，暂时没有买云服务器的打算，买都买了，那就给博客换个域名，也好记。</p>
-<span id="more"></span>
-<p>下面是针对有域名前提下进行的设置：</p>
-<p>首先给自己的域名添加GitHub解析，cmd命令里输入：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">C:\Users\kai&gt;ping github.io</span><br></pre></td></tr></table></figure>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">正在 Ping github.io [185.199.111.153] 具有 32 字节的数据:</span><br><span class="line">来自 185.199.111.153 的回复: 字节=32 时间=78ms TTL=53</span><br><span class="line">来自 185.199.111.153 的回复: 字节=32 时间=77ms TTL=53</span><br><span class="line">来自 185.199.111.153 的回复: 字节=32 时间=78ms TTL=53</span><br><span class="line">来自 185.199.111.153 的回复: 字节=32 时间=79ms TTL=53</span><br><span class="line"></span><br><span class="line">185.199.111.153 的 Ping 统计信息:</span><br><span class="line">    数据包: 已发送 = 4，已接收 = 4，丢失 = 0 (0% 丢失)，</span><br><span class="line">往返行程的估计时间(以毫秒为单位):</span><br><span class="line">    最短 = 77ms，最长 = 79ms，平均 = 78ms</span><br></pre></td></tr></table></figure>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">C:\Users\kai&gt;ping www.github.io</span><br></pre></td></tr></table></figure>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">正在 Ping www.github.io [2606:50c0:8000::153] 具有 32 字节的数据:</span><br><span class="line">来自 2606:50c0:8000::153 的回复: 时间=90ms</span><br><span class="line">来自 2606:50c0:8000::153 的回复: 时间=94ms</span><br><span class="line">请求超时。</span><br><span class="line">来自 2606:50c0:8000::153 的回复: 时间=82ms</span><br><span class="line"></span><br><span class="line">2606:50c0:8000::153 的 Ping 统计信息:</span><br><span class="line">    数据包: 已发送 = 4，已接收 = 3，丢失 = 1 (25% 丢失)，</span><br><span class="line">往返行程的估计时间(以毫秒为单位):</span><br><span class="line">    最短 = 82ms，最长 = 94ms，平均 = 88ms</span><br></pre></td></tr></table></figure>
-<p>将上面两个IP值在你的域名管理里进行解析，然后再添加一个你的博客仓库地址的解析（类型是CNAME）。</p>
-<center><a href="https://sm.ms/image/HiELMjpghxseaGY" target="_blank"><img src="https://s2.loli.net/2022/07/22/HiELMjpghxseaGY.png" /></a></center>
-
-<p>然后，在你的博客根目录\source文件夹下新建CANME文本文档，在里面输入你的域名，类似xx.xxx,保存后把CANME的后缀删除。如果不操作这一步，你每次执行hexo clean就会清除你绑定的域名。</p>
-<p>到此，你就可以用你的域名登录你的博客了。</p>
-<p>域名的另一个用途：注册企业邮箱，现阶段名字全拼的邮箱基本注册不到了，这时企业邮箱是个好的选择，名字的全拼加上你注册的喜欢的额域名，应该是现阶段最理想的搭配。</p>
+        <h4 id="有价星球"><a href="#有价星球" class="headerlink" title="有价星球"></a>有价星球</h4><p>货币使世界紧密联系，从繁华至蛮荒。</p>
+<p>莎士比亚：金钱是个好士兵，有了它可以使人勇气百倍。</p>
+<p>卢梭：我们手里的金钱是我们保持自由的工具。</p>
+<p>马歇尔： 语言表达我们的思想，货币表达我们的欲望和财产，给予我们更多的活力和激情，帮助我们达成目标。</p>
+<p>货币给物品定价，在很长时期是针对有形物品。对脑力发明产品的定价叫专利。</p>
+<p>货币渐渐演变成资本，</p>
 
     </div>
 
@@ -334,7 +324,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="https://c2h5oc2h5.github.io/2022/07/22/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E5%85%AD%EF%BC%9A%E5%8D%9A%E5%AE%A2%E7%BB%91%E5%AE%9A%E8%87%AA%E5%B7%B1%E5%9F%9F%E5%90%8D%E7%9A%84%E6%96%B9%E6%B3%95/" title="博客搭建六：绑定自己域名的方法">https://c2h5oc2h5.github.io/2022/07/22/博客搭建六：博客绑定自己域名的方法/</a>
+    <a href="https://c2h5oc2h5.github.io/2022/07/23/%E9%80%9A%E4%BF%97%E7%BB%8F%E6%B5%8E%E5%AD%A6/" title="通俗经济">https://c2h5oc2h5.github.io/2022/07/23/通俗经济学/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
@@ -344,6 +334,9 @@
 
 
       <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E7%BB%8F%E6%B5%8E%E5%AD%A6/" rel="tag"># 经济学</a>
+          </div>
 
         
 
@@ -351,13 +344,10 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2022/07/22/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E4%BA%94%EF%BC%9A%E5%9B%BE%E5%BA%8A%E9%80%89%E6%8B%A9/" rel="prev" title="博客搭建五：图床选择">
-      <i class="fa fa-chevron-left"></i> 博客搭建五：图床选择
+    <a href="/2022/07/22/1%E3%80%81%E7%BB%8F%E6%B5%8E%E5%AD%A6%E5%8D%81%E5%A4%A7%E5%8E%9F%E7%90%86/" rel="prev" title="1 经济学十大原理">
+      <i class="fa fa-chevron-left"></i> 1 经济学十大原理
     </a></div>
-      <div class="post-nav-item">
-    <a href="/2022/07/22/1.3python%E6%B8%A9%E5%BA%A6%E8%BD%AC%E6%8D%A2%E7%A8%8B%E5%BA%8F/" rel="next" title="1.3 python温度转换程序">
-      1.3 python温度转换程序 <i class="fa fa-chevron-right"></i>
-    </a></div>
+      <div class="post-nav-item"></div>
     </div>
       </footer>
     
@@ -417,6 +407,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%9C%89%E4%BB%B7%E6%98%9F%E7%90%83"><span class="nav-number">1.</span> <span class="nav-text">有价星球</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
