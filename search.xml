@@ -15,12 +15,34 @@
   <entry>
     <title>1 经济学十大原理</title>
     <url>/2022/07/22/1%E3%80%81%E7%BB%8F%E6%B5%8E%E5%AD%A6%E5%8D%81%E5%A4%A7%E5%8E%9F%E7%90%86/</url>
-    <content><![CDATA[]]></content>
+    <content><![CDATA[<h4 id="how-people-make-decisions"><a href="#how-people-make-decisions" class="headerlink" title="how people make decisions"></a>how people make decisions</h4><p>1.people face tradeoffs</p>
+<p>2.the cost of something is what you give up to get it</p>
+<p>3.rational people think at the margin</p>
+<p>4.people respond to incentives</p>
+<h4 id="how-people-interact"><a href="#how-people-interact" class="headerlink" title="how people interact"></a>how people interact</h4><p>5.trade can make everyone better off</p>
+<p>6.markets are usually a good way to orgnize economic cativity</p>
+<p>7.goverment can sometimes improve market outcomes</p>
+<h4 id="how-the-economy-as-a-whole-works"><a href="#how-the-economy-as-a-whole-works" class="headerlink" title="how the economy as a whole works"></a>how the economy as a whole works</h4><p>8.the standard of living depends on a country’s production</p>
+<p>9.prices rise when zhe goverment prints too mush money</p>
+<p>10.society faces a short-run tradeoff between inflation and unemployment</p>
+]]></content>
       <categories>
         <category>经济学</category>
       </categories>
       <tags>
         <tag>经济学</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>3.2daydayup举一反三：三天打鱼两天晒网式学习</title>
+    <url>/2022/07/22/3.2daydayup/</url>
+    <content><![CDATA[<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># daydayupQ5.py</span><br><span class="line"># 三天打鱼两天晒网式学习</span><br><span class="line"># def保留字用于定义函数,本次返回一个dayup值</span><br><span class="line">def dayUP(df):</span><br><span class="line">    dayup = 1</span><br><span class="line">    for i in range(365):</span><br><span class="line">        if i % 3 in [1,2]:  # 120120120....</span><br><span class="line">            dayup = dayup * (1 - 0.01)</span><br><span class="line">        else:</span><br><span class="line">            dayup = dayup * (1 + df)  # 此处是自定义变量</span><br><span class="line">    return dayup  # 严格缩进，与for语句是并行结构 给出返回值</span><br><span class="line">dayfactor = 0.01</span><br><span class="line">#dd = 1</span><br><span class="line">A = pow(1+dayfactor, 365)</span><br><span class="line">#while dayUP(df) &lt; A:  # 执行上面的for循环,NameError: name &#x27;df&#x27; is not defined</span><br><span class="line">#while dayUP(dd) &lt; A:  # 工作日努力值：0.010</span><br><span class="line">while dayUP(dayfactor) &lt; A:</span><br><span class="line">    dayfactor += 0.001</span><br><span class="line">print(&quot;工作日努力值：&#123;:.3f&#125;&quot;.format(dayfactor))</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>Code</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
       </tags>
   </entry>
   <entry>
@@ -229,18 +251,6 @@
       </tags>
   </entry>
   <entry>
-    <title>3.2daydayup举一反三：三天打鱼两天晒网式学习</title>
-    <url>/2022/07/22/3.2daydayup/</url>
-    <content><![CDATA[<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># daydayupQ5.py</span><br><span class="line"># 三天打鱼两天晒网式学习</span><br><span class="line"># def保留字用于定义函数,本次返回一个dayup值</span><br><span class="line">def dayUP(df):</span><br><span class="line">    dayup = 1</span><br><span class="line">    for i in range(365):</span><br><span class="line">        if i % 3 in [1,2]:  # 120120120....</span><br><span class="line">            dayup = dayup * (1 - 0.01)</span><br><span class="line">        else:</span><br><span class="line">            dayup = dayup * (1 + df)  # 此处是自定义变量</span><br><span class="line">    return dayup  # 严格缩进，与for语句是并行结构 给出返回值</span><br><span class="line">dayfactor = 0.01</span><br><span class="line">#dd = 1</span><br><span class="line">A = pow(1+dayfactor, 365)</span><br><span class="line">#while dayUP(df) &lt; A:  # 执行上面的for循环,NameError: name &#x27;df&#x27; is not defined</span><br><span class="line">#while dayUP(dd) &lt; A:  # 工作日努力值：0.010</span><br><span class="line">while dayUP(dayfactor) &lt; A:</span><br><span class="line">    dayfactor += 0.001</span><br><span class="line">print(&quot;工作日努力值：&#123;:.3f&#125;&quot;.format(dayfactor))</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>Code</category>
-      </categories>
-      <tags>
-        <tag>python</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>5.5 python代码与函数复用：科赫曲线</title>
     <url>/2022/07/22/5.5%E7%A7%91%E8%B5%AB%E9%9B%AA%E8%8A%B1%E5%B0%8F%E5%8C%85%E8%A3%B9/</url>
     <content><![CDATA[<h3 id="科赫曲线"><a href="#科赫曲线" class="headerlink" title="科赫曲线"></a>科赫曲线</h3><center><a href="https://sm.ms/image/qwjf7LmGWVY6bHQ" target="_blank"><img src="https://s2.loli.net/2022/07/22/qwjf7LmGWVY6bHQ.png" /></a></a></center>
@@ -262,12 +272,12 @@
       </tags>
   </entry>
   <entry>
-    <title>5.x Python函数和代码复用练习一</title>
-    <url>/2022/07/22/5.xPython%E5%87%BD%E6%95%B0%E5%92%8C%E4%BB%A3%E7%A0%81%E5%A4%8D%E7%94%A8%E7%BB%83%E4%B9%A0%E4%B8%80/</url>
-    <content><![CDATA[<h4 id="随机密码生成"><a href="#随机密码生成" class="headerlink" title="随机密码生成"></a><center>随机密码生成</center></h4><h5 id="描述"><a href="#描述" class="headerlink" title="描述"></a>描述</h5><p>补充编程模板中代码，完成以下功能：</p>
-<p>以整数17为随机数种子，获取用户输入整数N为长度，产生3个长度为N位的密码，密码的每位是一个数字。每个密码单独一行输出。产生的密码采用random.ranfint()函数。</p>
+    <title>5.x Python函数和代码复用练习二</title>
+    <url>/2022/07/22/5.x%20Python%E5%87%BD%E6%95%B0%E5%92%8C%E4%BB%A3%E7%A0%81%E5%A4%8D%E7%94%A8%E7%BB%83%E4%B9%A0%E4%BA%8C/</url>
+    <content><![CDATA[<h3 id="连续质数计算"><a href="#连续质数计算" class="headerlink" title="连续质数计算"></a><center>连续质数计算</center></h3><h4 id="描述"><a href="#描述" class="headerlink" title="描述"></a>描述</h4><p>完成以下功能:</p>
+<p>获得用户输入数字N，计算并输出从N开始的5个质数，单行输出，指数见用逗号分割。</p>
 <span id="more"></span>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">import random</span><br><span class="line"></span><br><span class="line">def genpwd(length):</span><br><span class="line">    min = pow(10, length - 1)</span><br><span class="line">    max = pow(10, length) -1  # 位数减1</span><br><span class="line">    return &quot;&#123;&#125;&quot;.format(random.randint(a, b)) # 返回值到print</span><br><span class="line">length = eval(input())</span><br><span class="line">random.seed(17)</span><br><span class="line">for i in range(3):</span><br><span class="line">    print(genpwd(length))</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 连续输出5个质数</span><br><span class="line"># 先定义质数判定函数</span><br><span class="line">def prime(m):</span><br><span class="line">    for i in range(2, m):</span><br><span class="line">        if m % i == 0:</span><br><span class="line">            return False</span><br><span class="line">        else:</span><br><span class="line">            return True</span><br><span class="line">count = 5</span><br><span class="line">n = eval(input())</span><br><span class="line">N = int(n)</span><br><span class="line">N = N + 1 if N &lt; n else N</span><br><span class="line">while count &gt; 0:</span><br><span class="line">    if prime(N):</span><br><span class="line">        if count &gt; 1:</span><br><span class="line">            print(N, end=&#x27;,&#x27;)</span><br><span class="line">        else:</span><br><span class="line">            print(N, end=&#x27;&#x27;)</span><br><span class="line">        count -= 1 # 因为要保证输出五个连续的质数，所以只有是质数时count-1，与if平级</span><br><span class="line">    #count -= 1</span><br><span class="line">    #print(count)</span><br><span class="line"></span><br><span class="line">    N += 1 # 与第一个if平级</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 ]]></content>
       <categories>
         <category>Code</category>
@@ -277,12 +287,12 @@
       </tags>
   </entry>
   <entry>
-    <title>5.x Python函数和代码复用练习二</title>
-    <url>/2022/07/22/5.x%20Python%E5%87%BD%E6%95%B0%E5%92%8C%E4%BB%A3%E7%A0%81%E5%A4%8D%E7%94%A8%E7%BB%83%E4%B9%A0%E4%BA%8C/</url>
-    <content><![CDATA[<h3 id="连续质数计算"><a href="#连续质数计算" class="headerlink" title="连续质数计算"></a><center>连续质数计算</center></h3><h4 id="描述"><a href="#描述" class="headerlink" title="描述"></a>描述</h4><p>完成以下功能:</p>
-<p>获得用户输入数字N，计算并输出从N开始的5个质数，单行输出，指数见用逗号分割。</p>
+    <title>5.x Python函数和代码复用练习一</title>
+    <url>/2022/07/22/5.xPython%E5%87%BD%E6%95%B0%E5%92%8C%E4%BB%A3%E7%A0%81%E5%A4%8D%E7%94%A8%E7%BB%83%E4%B9%A0%E4%B8%80/</url>
+    <content><![CDATA[<h4 id="随机密码生成"><a href="#随机密码生成" class="headerlink" title="随机密码生成"></a><center>随机密码生成</center></h4><h5 id="描述"><a href="#描述" class="headerlink" title="描述"></a>描述</h5><p>补充编程模板中代码，完成以下功能：</p>
+<p>以整数17为随机数种子，获取用户输入整数N为长度，产生3个长度为N位的密码，密码的每位是一个数字。每个密码单独一行输出。产生的密码采用random.ranfint()函数。</p>
 <span id="more"></span>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 连续输出5个质数</span><br><span class="line"># 先定义质数判定函数</span><br><span class="line">def prime(m):</span><br><span class="line">    for i in range(2, m):</span><br><span class="line">        if m % i == 0:</span><br><span class="line">            return False</span><br><span class="line">        else:</span><br><span class="line">            return True</span><br><span class="line">count = 5</span><br><span class="line">n = eval(input())</span><br><span class="line">N = int(n)</span><br><span class="line">N = N + 1 if N &lt; n else N</span><br><span class="line">while count &gt; 0:</span><br><span class="line">    if prime(N):</span><br><span class="line">        if count &gt; 1:</span><br><span class="line">            print(N, end=&#x27;,&#x27;)</span><br><span class="line">        else:</span><br><span class="line">            print(N, end=&#x27;&#x27;)</span><br><span class="line">        count -= 1 # 因为要保证输出五个连续的质数，所以只有是质数时count-1，与if平级</span><br><span class="line">    #count -= 1</span><br><span class="line">    #print(count)</span><br><span class="line"></span><br><span class="line">    N += 1 # 与第一个if平级</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">import random</span><br><span class="line"></span><br><span class="line">def genpwd(length):</span><br><span class="line">    min = pow(10, length - 1)</span><br><span class="line">    max = pow(10, length) -1  # 位数减1</span><br><span class="line">    return &quot;&#123;&#125;&quot;.format(random.randint(a, b)) # 返回值到print</span><br><span class="line">length = eval(input())</span><br><span class="line">random.seed(17)</span><br><span class="line">for i in range(3):</span><br><span class="line">    print(genpwd(length))</span><br></pre></td></tr></table></figure>
 ]]></content>
       <categories>
         <category>Code</category>
