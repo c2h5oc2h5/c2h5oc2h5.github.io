@@ -37,6 +37,18 @@
       </tags>
   </entry>
   <entry>
+    <title>4.5 python循环应用：蒙特卡洛方法计算圆周率</title>
+    <url>/2022/07/22/4.5pytho%E5%BE%AA%E7%8E%AF%E5%BA%94%E7%94%A8%EF%BC%9A%E8%92%99%E7%89%B9%E5%8D%A1%E6%B4%9B%E6%96%B9%E6%B3%95%E8%AE%A1%E7%AE%97%E5%9C%86%E5%91%A8%E7%8E%87/</url>
+    <content><![CDATA[<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 圆周率计算 蒙特卡洛</span><br><span class="line">import random</span><br><span class="line">import time</span><br><span class="line">darts = 1000*1000  # 影响运行时间</span><br><span class="line">hits = 0.0</span><br><span class="line">start = time.perf_counter()  # 程序的花费时间大都在循环语句上</span><br><span class="line">for i in range(1, darts+1):</span><br><span class="line">    x, y = random.random(), random.random()</span><br><span class="line">    dist = pow(x ** 2 + y ** 2, 0.5)</span><br><span class="line">    if dist &lt;= 1.0:</span><br><span class="line">        hits = hits + 1</span><br><span class="line">pi = 4 * (hits/darts)</span><br><span class="line">print(&quot;圆周率的值：&#123;&#125;&quot;.format(pi))</span><br><span class="line">print(&quot;运行时间是：&#123;:.5f&#125;s&quot;.format(time.perf_counter()-start))</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>Code</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Hello World</title>
     <url>/2022/07/22/hello-world/</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
