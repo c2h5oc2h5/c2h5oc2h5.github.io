@@ -25,6 +25,18 @@
       </tags>
   </entry>
   <entry>
+    <title>3.5python文本进度条举一反三：渐变进度条</title>
+    <url>/2022/07/22/3.5python%E6%96%87%E6%9C%AC%E8%BF%9B%E5%BA%A6%E6%9D%A1%E4%B8%BE%E4%B8%80%E5%8F%8D%E4%B8%89%EF%BC%9A%E6%B8%90%E5%8F%98%E8%BF%9B%E5%BA%A6%E6%9D%A1/</url>
+    <content><![CDATA[<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># textbar.py</span><br><span class="line"># 渐变显示进度条</span><br><span class="line">import time</span><br><span class="line">scale = 50</span><br><span class="line">print(&quot;执行开始&quot;.center(scale//2, &quot;-&quot;))  # str.center(width, fillchar)宽度和填充字符</span><br><span class="line">start = time.perf_counter() # 计时</span><br><span class="line">for i in range(scale+1):</span><br><span class="line">    p = i / scale</span><br><span class="line">    power = (p + (1 - p)/2) ** 8  #函数 进度条设计</span><br><span class="line">    c = power * 100</span><br><span class="line">    a = &#x27;*&#x27; * int(c)</span><br><span class="line">    b = &#x27;.&#x27; * (scale - int(c))</span><br><span class="line">    dur = time.perf_counter() - start</span><br><span class="line">    print(&quot;\r&#123;:^3.0f&#125;%[&#123;&#125;-&gt;&#123;&#125;]&#123;:.2f&#125;s&quot;.format(c, a, b, dur), end=&quot;&quot;) # ^数字居中符号 3.2前面是整数保留位数，后面是小数</span><br><span class="line">    time.sleep(0.1)</span><br><span class="line">print(&quot;\n&quot;+&quot;执行结束&quot;.center(scale//2, &quot;-&quot;))</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>Code</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Hello World</title>
     <url>/2022/07/22/hello-world/</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
