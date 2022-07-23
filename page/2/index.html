@@ -197,6 +197,109 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://c2h5oc2h5.github.io/2022/07/22/4.5pytho%E5%BE%AA%E7%8E%AF%E5%BA%94%E7%94%A8%EF%BC%9A%E8%92%99%E7%89%B9%E5%8D%A1%E6%B4%9B%E6%96%B9%E6%B3%95%E8%AE%A1%E7%AE%97%E5%9C%86%E5%91%A8%E7%8E%87/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="kay">
+      <meta itemprop="description" content="学以致用">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ZIYUE TECH">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2022/07/22/4.5pytho%E5%BE%AA%E7%8E%AF%E5%BA%94%E7%94%A8%EF%BC%9A%E8%92%99%E7%89%B9%E5%8D%A1%E6%B4%9B%E6%96%B9%E6%B3%95%E8%AE%A1%E7%AE%97%E5%9C%86%E5%91%A8%E7%8E%87/" class="post-title-link" itemprop="url">4.5 python循环应用：蒙特卡洛方法计算圆周率</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2022-07-22 13:02:33 / 修改时间：13:21:08" itemprop="dateCreated datePublished" datetime="2022-07-22T13:02:33+08:00">2022-07-22</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Code/" itemprop="url" rel="index"><span itemprop="name">Code</span></a>
+                </span>
+            </span>
+
+          
+            <span id="/2022/07/22/4.5pytho%E5%BE%AA%E7%8E%AF%E5%BA%94%E7%94%A8%EF%BC%9A%E8%92%99%E7%89%B9%E5%8D%A1%E6%B4%9B%E6%96%B9%E6%B3%95%E8%AE%A1%E7%AE%97%E5%9C%86%E5%91%A8%E7%8E%87/" class="post-meta-item leancloud_visitors" data-flag-title="4.5 python循环应用：蒙特卡洛方法计算圆周率" title="阅读次数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span class="leancloud-visitors-count"></span>
+            </span>
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="fa fa-comment-o"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/2022/07/22/4.5pytho%E5%BE%AA%E7%8E%AF%E5%BA%94%E7%94%A8%EF%BC%9A%E8%92%99%E7%89%B9%E5%8D%A1%E6%B4%9B%E6%96%B9%E6%B3%95%E8%AE%A1%E7%AE%97%E5%9C%86%E5%91%A8%E7%8E%87/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2022/07/22/4.5pytho%E5%BE%AA%E7%8E%AF%E5%BA%94%E7%94%A8%EF%BC%9A%E8%92%99%E7%89%B9%E5%8D%A1%E6%B4%9B%E6%96%B9%E6%B3%95%E8%AE%A1%E7%AE%97%E5%9C%86%E5%91%A8%E7%8E%87/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-file-word-o"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>370</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-clock-o"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>1 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"># 圆周率计算 蒙特卡洛</span><br><span class="line">import random</span><br><span class="line">import time</span><br><span class="line">darts = 1000*1000  # 影响运行时间</span><br><span class="line">hits = 0.0</span><br><span class="line">start = time.perf_counter()  # 程序的花费时间大都在循环语句上</span><br><span class="line">for i in range(1, darts+1):</span><br><span class="line">    x, y = random.random(), random.random()</span><br><span class="line">    dist = pow(x ** 2 + y ** 2, 0.5)</span><br><span class="line">    if dist &lt;= 1.0:</span><br><span class="line">        hits = hits + 1</span><br><span class="line">pi = 4 * (hits/darts)</span><br><span class="line">print(&quot;圆周率的值：&#123;&#125;&quot;.format(pi))</span><br><span class="line">print(&quot;运行时间是：&#123;:.5f&#125;s&quot;.format(time.perf_counter()-start))</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="https://c2h5oc2h5.github.io/2022/07/22/3.5python%E6%96%87%E6%9C%AC%E8%BF%9B%E5%BA%A6%E6%9D%A1%E4%B8%BE%E4%B8%80%E5%8F%8D%E4%B8%89%EF%BC%9A%E6%B8%90%E5%8F%98%E8%BF%9B%E5%BA%A6%E6%9D%A1/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1182,121 +1285,6 @@
   
   
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://c2h5oc2h5.github.io/2022/07/22/%E6%A1%83%E5%A4%AD/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.jpg">
-      <meta itemprop="name" content="kay">
-      <meta itemprop="description" content="学以致用">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="ZIYUE TECH">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2022/07/22/%E6%A1%83%E5%A4%AD/" class="post-title-link" itemprop="url">桃夭</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2022-07-22 02:52:16" itemprop="dateCreated datePublished" datetime="2022-07-22T02:52:16+08:00">2022-07-22</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2022-07-21 01:44:52" itemprop="dateModified" datetime="2022-07-21T01:44:52+08:00">2022-07-21</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E6%96%87%E5%AD%A6/" itemprop="url" rel="index"><span itemprop="name">文学</span></a>
-                </span>
-            </span>
-
-          
-            <span id="/2022/07/22/%E6%A1%83%E5%A4%AD/" class="post-meta-item leancloud_visitors" data-flag-title="桃夭" title="阅读次数">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-eye"></i>
-              </span>
-              <span class="post-meta-item-text">阅读次数：</span>
-              <span class="leancloud-visitors-count"></span>
-            </span>
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="fa fa-comment-o"></i>
-      </span>
-      <span class="post-meta-item-text">Valine：</span>
-    
-    <a title="valine" href="/2022/07/22/%E6%A1%83%E5%A4%AD/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2022/07/22/%E6%A1%83%E5%A4%AD/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-file-word-o"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>68</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-clock-o"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>1 分钟</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h5 id="桃夭"><a href="#桃夭" class="headerlink" title="桃夭"></a><center>桃夭</center></h5><center>佚名 〔先秦〕</center>
-
-<center>桃之夭夭，灼灼其华。之子于归，宜其室家。</center>
-
-<center>桃之夭夭，有蕡其实。之子于归，宜其家室。</center>
-
-<center>桃之夭夭，其叶蓁蓁。之子于归，宜其家人。</center>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
 
   
   <nav class="pagination">
@@ -1368,7 +1356,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">21</span>
+          <span class="site-state-item-count">22</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -1428,7 +1416,7 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-area-chart"></i>
     </span>
-    <span title="站点总字数">30k</span>
+    <span title="站点总字数">31k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
