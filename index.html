@@ -292,6 +292,155 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://c2h5oc2h5.github.io/2022/07/24/6%E3%80%81%E7%BB%84%E5%90%88%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="kay">
+      <meta itemprop="description" content="学以致用">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ZIYUE TECH">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2022/07/24/6%E3%80%81%E7%BB%84%E5%90%88%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/" class="post-title-link" itemprop="url">6.组合数据类型</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2022-07-24 21:21:12 / 修改时间：23:11:17" itemprop="dateCreated datePublished" datetime="2022-07-24T21:21:12+08:00">2022-07-24</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Code/" itemprop="url" rel="index"><span itemprop="name">Code</span></a>
+                </span>
+            </span>
+
+          
+            <span id="/2022/07/24/6%E3%80%81%E7%BB%84%E5%90%88%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/" class="post-meta-item leancloud_visitors" data-flag-title="6.组合数据类型" title="阅读次数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span class="leancloud-visitors-count"></span>
+            </span>
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="fa fa-comment-o"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/2022/07/24/6%E3%80%81%E7%BB%84%E5%90%88%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2022/07/24/6%E3%80%81%E7%BB%84%E5%90%88%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-file-word-o"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>1k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-clock-o"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>1 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h3 id="1-集合类型及操作"><a href="#1-集合类型及操作" class="headerlink" title="1 集合类型及操作"></a>1 集合类型及操作</h3><h4 id="集合类型定义"><a href="#集合类型定义" class="headerlink" title="集合类型定义"></a>集合类型定义</h4><p>集合用{}表示，元素之间用逗号分离</p>
+<p>集合中间每个元素唯一，不存在相同元素</p>
+<p>集合元素之间无序</p>
+<h4 id="集合操作符"><a href="#集合操作符" class="headerlink" title="集合操作符"></a>集合操作符</h4><p>并运算S|T、交运算S&amp;T、差运算S-T、补运算S^T</p>
+<p>关系操作符&gt;,&gt;&#x3D;,&lt;,&lt;&#x3D;</p>
+<p>增强操作符：S ^&#x3D; T，修改S</p>
+<h4 id="集合处理方法"><a href="#集合处理方法" class="headerlink" title="集合处理方法"></a>集合处理方法</h4><p>S.add(x) #增加元素</p>
+<p>S.discard(x) #删除元素，元素可以不是集合中的</p>
+<p>S.remove(x) #移除元素，必须是在S中的</p>
+<p>S.clear() #移除所有元素</p>
+<p>S.pop() #随机取出（移除）一个元素，若空返回错误</p>
+<p>S.copy()</p>
+<p>len(S) #返回S中元素个数</p>
+<p>x in S # 判断x是否在S中</p>
+<p>x not in S</p>
+<p>set(x) #将x类型转换为集合类型</p>
+<h4 id="集合类型应用场景"><a href="#集合类型应用场景" class="headerlink" title="集合类型应用场景"></a>集合类型应用场景</h4><p>包含关系比较</p>
+<p>数据去重：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">ls = [&#x27;p&#x27;, &#x27;p&#x27;, &#x27;y&#x27;, &#x27;y&#x27;, &#x27;123&#x27;]</span><br><span class="line">s = set(ls) # 利用了集合无重复元素特点</span><br><span class="line">lt = list(s) # 将集合转换为列表</span><br></pre></td></tr></table></figure>
+<h3 id="2-序列类型及其操作"><a href="#2-序列类型及其操作" class="headerlink" title="2 序列类型及其操作"></a>2 序列类型及其操作</h3><p>序列：一维元素向量，类型可以不同，由序号引导</p>
+<p>衍生：字符串、元组类型、列表类型</p>
+<h4 id="序列处理函数及方法"><a href="#序列处理函数及方法" class="headerlink" title="序列处理函数及方法"></a>序列处理函数及方法</h4><p>x in s # 判断是否在s内</p>
+<p>x not in s</p>
+<p>s + t # 连接两个序列</p>
+<p>s * n 或 n * s # 将s复制n次</p>
+<p>s[i] # 索引</p>
+<p>s[i:j]或s[i:j:k] #切片操作，k是步长</p>
+<p>取反操作：[::-1]</p>
+<p>len(s):返回长度</p>
+<p>min(s)</p>
+<p>max(s) # 必须是可比较</p>
+<p>s.index(x) 或s.index(x, i, j)# 第一个x出现的下标,整个序列或从i到j</p>
+<p>s.count(x) # x出现的次数</p>
+<h4 id="元组类型及操作"><a href="#元组类型及操作" class="headerlink" title="元组类型及操作"></a>元组类型及操作</h4><p>元组一旦被创建不能被修改，可以使用小括号也可不使用</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">return 1, 2</span><br></pre></td></tr></table></figure>
+<h4 id="列表类型"><a href="#列表类型" class="headerlink" title="列表类型"></a>列表类型</h4><p>列表类型创建后可修改，用[]或list()创建，元素间用逗号分隔，元素类型可以不同，五长度限制。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">ls[i] = x</span><br><span class="line">ls[i:j:k] = lt</span><br><span class="line">del ls[i]</span><br><span class="line">del ls[i:j:k]</span><br><span class="line">ls += lt</span><br><span class="line">ls * n</span><br></pre></td></tr></table></figure>
+
+<p>ls.append(x) # 列表末尾增加一个元素x</p>
+<p>ls.clear()</p>
+<p>ls.copy()</p>
+<p>ls.insert(i, x) # 在第i个位置后增加元素x</p>
+<p>ls.pop(i) # 取出第i位置元素并删除</p>
+<p>ls.remove(x) # 第一个x删除</p>
+<p>ls.reverse() # 将列表元素反转</p>
+<h3 id="序列类型应用场景"><a href="#序列类型应用场景" class="headerlink" title="序列类型应用场景"></a>序列类型应用场景</h3><p>对数据的表达</p>
+<p>转换为元组类型：lt &#x3D; tuple(ls)</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="https://c2h5oc2h5.github.io/2022/07/23/%E9%80%9A%E4%BF%97%E7%BB%8F%E6%B5%8E%E5%AD%A6/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1188,117 +1337,6 @@
   
   
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://c2h5oc2h5.github.io/2022/07/22/5.2python%E6%95%B0%E7%A0%81%E7%AE%A1%E6%98%BE%E7%A4%BA/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.jpg">
-      <meta itemprop="name" content="kay">
-      <meta itemprop="description" content="学以致用">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="ZIYUE TECH">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2022/07/22/5.2python%E6%95%B0%E7%A0%81%E7%AE%A1%E6%98%BE%E7%A4%BA/" class="post-title-link" itemprop="url">数码管显示时间</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2022-07-22 13:31:50 / 修改时间：13:32:08" itemprop="dateCreated datePublished" datetime="2022-07-22T13:31:50+08:00">2022-07-22</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Code/" itemprop="url" rel="index"><span itemprop="name">Code</span></a>
-                </span>
-            </span>
-
-          
-            <span id="/2022/07/22/5.2python%E6%95%B0%E7%A0%81%E7%AE%A1%E6%98%BE%E7%A4%BA/" class="post-meta-item leancloud_visitors" data-flag-title="数码管显示时间" title="阅读次数">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-eye"></i>
-              </span>
-              <span class="post-meta-item-text">阅读次数：</span>
-              <span class="leancloud-visitors-count"></span>
-            </span>
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="fa fa-comment-o"></i>
-      </span>
-      <span class="post-meta-item-text">Valine：</span>
-    
-    <a title="valine" href="/2022/07/22/5.2python%E6%95%B0%E7%A0%81%E7%AE%A1%E6%98%BE%E7%A4%BA/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2022/07/22/5.2python%E6%95%B0%E7%A0%81%E7%AE%A1%E6%98%BE%E7%A4%BA/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-file-word-o"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>1.1k</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-clock-o"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>1 分钟</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>利用python的turtle库来实现用7段数码管来显示时间</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"># 倒计时</span><br><span class="line"></span><br><span class="line">import turtle as t</span><br><span class="line">#t.speed(10) 调节画笔快慢</span><br><span class="line"></span><br><span class="line">def drawGap():#数码管间隔</span><br><span class="line">    t.penup()</span><br><span class="line">    t.fd(5)</span><br></pre></td></tr></table></figure>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2022/07/22/5.2python%E6%95%B0%E7%A0%81%E7%AE%A1%E6%98%BE%E7%A4%BA/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
 
   
   <nav class="pagination">
@@ -1370,7 +1408,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">22</span>
+          <span class="site-state-item-count">23</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -1430,12 +1468,12 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-area-chart"></i>
     </span>
-    <span title="站点总字数">31k</span>
+    <span title="站点总字数">32k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="站点阅读时长">28 分钟</span>
+    <span title="站点阅读时长">29 分钟</span>
 </div>
 
         
