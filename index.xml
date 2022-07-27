@@ -1,25 +1,27 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>我的全新 Hugo 网站</title>
+        <title>子曰</title>
         <link>http://example.org/</link>
         <description>This is my cool site</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Wed, 27 Jul 2022 11:58:13 &#43;0800</lastBuildDate>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Wed, 27 Jul 2022 16:45:06 &#43;0800</lastBuildDate>
             <atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
         <item>
-    <title>博客框架</title>
-    <link>http://example.org/posts/%E5%8D%9A%E5%AE%A2%E6%A1%86%E6%9E%B6/</link>
-    <pubDate>Wed, 27 Jul 2022 11:58:13 &#43;0800</pubDate>
-    <author>xxxx</author>
-    <guid>http://example.org/posts/%E5%8D%9A%E5%AE%A2%E6%A1%86%E6%9E%B6/</guid>
-    <description><![CDATA[居中测试 为什么不居中]]></description>
+    <title>桃夭</title>
+    <link>http://example.org/posts/%E6%A1%83%E5%A4%AD/</link>
+    <pubDate>Wed, 27 Jul 2022 16:45:06 &#43;0800</pubDate>
+    <author>kay</author>
+    <guid>http://example.org/posts/%E6%A1%83%E5%A4%AD/</guid>
+    <description><![CDATA[佚名 〔先秦〕 桃之夭夭，灼灼其华。之子于归，宜其室家。 桃之夭夭，有蕡其实。之子于归，宜其家室。 桃之夭夭，其叶蓁蓁。之子于归，宜其家人。]]></description>
 </item>
 <item>
     <title>关于我</title>
     <link>http://example.org/posts/%E5%85%B3%E4%BA%8E%E6%88%91/</link>
     <pubDate>Wed, 27 Jul 2022 11:48:48 &#43;0800</pubDate>
-    <author>xxxx</author>
+    <author>kay</author>
     <guid>http://example.org/posts/%E5%85%B3%E4%BA%8E%E6%88%91/</guid>
-    <description><![CDATA[我的博客，欢迎来玩]]></description>
+    <description><![CDATA[<p>为什么要搭建自己的博客呢？</p>
+<p>契机</p>
+<p>对博文做个备份。</p>]]></description>
 </item>
 </channel>
 </rss>
