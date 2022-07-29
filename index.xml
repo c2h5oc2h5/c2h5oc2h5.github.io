@@ -25,11 +25,7 @@
     <description><![CDATA[# 圆周率计算 蒙特卡洛 import random import time darts = 1000*1000 # 影响运行时间 hits = 0.0 start = time.perf_counter() # 程序的花费时间大都在循环语句上 for i in range(1, darts+1): x, y = random.random(), random.random() dist = pow(x ** 2 + y ** 2, 0.5) if dist &lt;= 1.0:]]></description>
 </item>
 <item>
-<<<<<<< HEAD
     <title>3.5 python文本进度条举一反三：渐变进度条</title>
-=======
-    <title>3.5python文本进度条举一反三：渐变进度条</title>
->>>>>>> 8054de0b4be319222d307a127380a28fbb69cfea
     <link>https://ziyue.tech/posts/3.5python%E6%96%87%E6%9C%AC%E8%BF%9B%E5%BA%A6%E6%9D%A1%E4%B8%BE%E4%B8%80%E5%8F%8D%E4%B8%89%E6%B8%90%E5%8F%98%E8%BF%9B%E5%BA%A6%E6%9D%A1/</link>
     <pubDate>Fri, 29 Jul 2022 14:31:58 &#43;0800</pubDate>
     <author>kay</author>
