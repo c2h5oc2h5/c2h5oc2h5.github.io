@@ -2,13 +2,16 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
-            <loc>http://example.org/</loc><lastmod>2022-07-28T01:45:41&#43;08:00</lastmod></url><url>
-            <loc>http://example.org/posts/</loc><lastmod>2022-07-28T01:45:41&#43;08:00</lastmod></url><url>
-            <loc>http://example.org/tags/</loc><lastmod>2022-07-28T01:45:41&#43;08:00</lastmod></url><url>
+            <loc>http://example.org/posts/1.3python%E6%B8%A9%E5%BA%A6%E8%BD%AC%E6%8D%A2%E7%A8%8B%E5%BA%8F/</loc><lastmod>2022-07-29T13:33:04&#43;08:00</lastmod></url><url>
+            <loc>http://example.org/categories/</loc><lastmod>2022-07-29T13:33:04&#43;08:00</lastmod></url><url>
+            <loc>http://example.org/categories/code/</loc><lastmod>2022-07-29T13:33:04&#43;08:00</lastmod></url><url>
+            <loc>http://example.org/</loc><lastmod>2022-07-29T13:33:04&#43;08:00</lastmod></url><url>
+            <loc>http://example.org/posts/</loc><lastmod>2022-07-29T13:33:04&#43;08:00</lastmod></url><url>
+            <loc>http://example.org/tags/python/</loc><lastmod>2022-07-29T13:33:04&#43;08:00</lastmod></url><url>
+            <loc>http://example.org/tags/</loc><lastmod>2022-07-29T13:33:04&#43;08:00</lastmod></url><url>
             <loc>http://example.org/tags/%E5%8D%9A%E5%AE%A2/</loc><lastmod>2022-07-28T01:45:41&#43;08:00</lastmod></url><url>
             <loc>http://example.org/posts/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E4%B8%89hugo%E6%B7%BB%E5%8A%A0%E6%90%9C%E7%B4%A2%E5%8A%9F%E8%83%BD/</loc><lastmod>2022-07-28T01:45:41&#43;08:00</lastmod></url><url>
             <loc>http://example.org/posts/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E4%BA%8Chugo%E6%B7%BB%E5%8A%A0gitalk%E8%AF%84%E8%AE%BA%E5%8A%9F%E8%83%BD/</loc><lastmod>2022-07-27T22:43:21&#43;08:00</lastmod></url><url>
             <loc>http://example.org/posts/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E4%B8%80hugo/</loc><lastmod>2022-07-27T21:47:21&#43;08:00</lastmod></url><url>
             <loc>http://example.org/posts/%E6%A1%83%E5%A4%AD/</loc><lastmod>2022-07-27T16:45:06&#43;08:00</lastmod></url><url>
-            <loc>http://example.org/posts/%E5%85%B3%E4%BA%8E%E6%88%91/</loc><lastmod>2022-07-27T11:48:48&#43;08:00</lastmod></url><url>
-            <loc>http://example.org/categories/</loc></url></urlset>
+            <loc>http://example.org/posts/%E5%85%B3%E4%BA%8E%E6%88%91/</loc><lastmod>2022-07-27T11:48:48&#43;08:00</lastmod></url></urlset>
