@@ -4,7 +4,7 @@
         <link>https://ziyue.tech/</link>
         <description>wangkai&#39;s blog</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>support@ziyue.tech (kay)</managingEditor>
-            <webMaster>support@ziyue.tech (kay)</webMaster><lastBuildDate>Fri, 29 Jul 2022 14:31:58 &#43;0800</lastBuildDate>
+            <webMaster>support@ziyue.tech (kay)</webMaster><lastBuildDate>Fri, 29 Jul 2022 15:14:53 &#43;0800</lastBuildDate>
             <atom:link href="https://ziyue.tech/index.xml" rel="self" type="application/rss+xml" />
         <item>
     <title>写在前面</title>
@@ -15,6 +15,14 @@
     <description><![CDATA[<p>为什么要搭建自己的博客呢？</p>
 <p>契机</p>
 <p>对博文做个备份。</p>]]></description>
+</item>
+<item>
+    <title>4.5 pytho循环应用：蒙特卡洛方法计算圆周率</title>
+    <link>https://ziyue.tech/posts/4.5pytho%E5%BE%AA%E7%8E%AF%E5%BA%94%E7%94%A8%E8%92%99%E7%89%B9%E5%8D%A1%E6%B4%9B%E6%96%B9%E6%B3%95%E8%AE%A1%E7%AE%97%E5%9C%86%E5%91%A8%E7%8E%87/</link>
+    <pubDate>Fri, 29 Jul 2022 15:14:53 &#43;0800</pubDate>
+    <author>kay</author>
+    <guid>https://ziyue.tech/posts/4.5pytho%E5%BE%AA%E7%8E%AF%E5%BA%94%E7%94%A8%E8%92%99%E7%89%B9%E5%8D%A1%E6%B4%9B%E6%96%B9%E6%B3%95%E8%AE%A1%E7%AE%97%E5%9C%86%E5%91%A8%E7%8E%87/</guid>
+    <description><![CDATA[# 圆周率计算 蒙特卡洛 import random import time darts = 1000*1000 # 影响运行时间 hits = 0.0 start = time.perf_counter() # 程序的花费时间大都在循环语句上 for i in range(1, darts+1): x, y = random.random(), random.random() dist = pow(x ** 2 + y ** 2, 0.5) if dist &lt;= 1.0:]]></description>
 </item>
 <item>
     <title>3.5python文本进度条举一反三：渐变进度条</title>
