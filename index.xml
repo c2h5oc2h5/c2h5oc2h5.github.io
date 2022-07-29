@@ -57,6 +57,14 @@
     <description><![CDATA[<p>博客搭建逐渐完善，博文内容也逐渐增多，添加搜索功能可以很方便的检索内容，对知识进行回顾，温故而知新。</p>]]></description>
 </item>
 <item>
+    <title>博客搭建四：hugo添加友链</title>
+    <link>https://ziyue.tech/posts/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E5%9B%9Bhugo%E6%B7%BB%E5%8A%A0%E5%8F%8B%E9%93%BE/</link>
+    <pubDate>Wed, 27 Jul 2022 23:43:21 &#43;0800</pubDate>
+    <author>kay</author>
+    <guid>https://ziyue.tech/posts/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E5%9B%9Bhugo%E6%B7%BB%E5%8A%A0%E5%8F%8B%E9%93%BE/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
     <title>博客搭建二：hugo添加gitalk评论功能</title>
     <link>https://ziyue.tech/posts/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E4%BA%8Chugo%E6%B7%BB%E5%8A%A0gitalk%E8%AF%84%E8%AE%BA%E5%8A%9F%E8%83%BD/</link>
     <pubDate>Wed, 27 Jul 2022 22:43:21 &#43;0800</pubDate>
