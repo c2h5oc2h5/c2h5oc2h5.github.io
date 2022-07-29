@@ -49,20 +49,20 @@
     <description><![CDATA[#TempConvert.py TempStr = input(&#34;请输入带有符号的温度值:&#34;) if TempStr[-1] in {&#39;F&#39;,&#39;f&#39;}: #这个字符串最后一个字符是否在这个列表里 C = (eval(TempStr[0:-1]) - 32) / 1.8 print(&]]></description>
 </item>
 <item>
+    <title>博客搭建四：hugo添加友链</title>
+    <link>https://ziyue.tech/posts/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E5%9B%9Bhugo%E6%B7%BB%E5%8A%A0%E5%8F%8B%E9%93%BE/</link>
+    <pubDate>Thu, 28 Jul 2022 23:43:21 &#43;0800</pubDate>
+    <author>kay</author>
+    <guid>https://ziyue.tech/posts/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E5%9B%9Bhugo%E6%B7%BB%E5%8A%A0%E5%8F%8B%E9%93%BE/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
     <title>博客搭建三：hugo添加搜索功能</title>
     <link>https://ziyue.tech/posts/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E4%B8%89hugo%E6%B7%BB%E5%8A%A0%E6%90%9C%E7%B4%A2%E5%8A%9F%E8%83%BD/</link>
     <pubDate>Thu, 28 Jul 2022 01:45:41 &#43;0800</pubDate>
     <author>kay</author>
     <guid>https://ziyue.tech/posts/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E4%B8%89hugo%E6%B7%BB%E5%8A%A0%E6%90%9C%E7%B4%A2%E5%8A%9F%E8%83%BD/</guid>
     <description><![CDATA[<p>博客搭建逐渐完善，博文内容也逐渐增多，添加搜索功能可以很方便的检索内容，对知识进行回顾，温故而知新。</p>]]></description>
-</item>
-<item>
-    <title>博客搭建四：hugo添加友链</title>
-    <link>https://ziyue.tech/posts/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E5%9B%9Bhugo%E6%B7%BB%E5%8A%A0%E5%8F%8B%E9%93%BE/</link>
-    <pubDate>Wed, 27 Jul 2022 23:43:21 &#43;0800</pubDate>
-    <author>kay</author>
-    <guid>https://ziyue.tech/posts/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E5%9B%9Bhugo%E6%B7%BB%E5%8A%A0%E5%8F%8B%E9%93%BE/</guid>
-    <description><![CDATA[]]></description>
 </item>
 <item>
     <title>博客搭建二：hugo添加gitalk评论功能</title>
