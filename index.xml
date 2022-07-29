@@ -3,9 +3,26 @@
         <title>Ideas Worth Spreading</title>
         <link>http://example.org/</link>
         <description>This is my cool site</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Wed, 27 Jul 2022 21:47:21 &#43;0800</lastBuildDate>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Thu, 28 Jul 2022 01:45:41 &#43;0800</lastBuildDate>
             <atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>博客搭建三：hugo添加搜索功能</title>
+    <link>http://example.org/posts/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E4%B8%89hugo%E6%B7%BB%E5%8A%A0%E6%90%9C%E7%B4%A2%E5%8A%9F%E8%83%BD/</link>
+    <pubDate>Thu, 28 Jul 2022 01:45:41 &#43;0800</pubDate>
+    <author>kay</author>
+    <guid>http://example.org/posts/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E4%B8%89hugo%E6%B7%BB%E5%8A%A0%E6%90%9C%E7%B4%A2%E5%8A%9F%E8%83%BD/</guid>
+    <description><![CDATA[<p>博客搭建逐渐完善，博文内容也逐渐增多，添加搜索功能可以很方便的检索内容，对知识进行回顾，温故而知新。</p>]]></description>
+</item>
+<item>
+    <title>博客搭建二：hugo添加gitalk评论功能</title>
+    <link>http://example.org/posts/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E4%BA%8Chugo%E6%B7%BB%E5%8A%A0gitalk%E8%AF%84%E8%AE%BA%E5%8A%9F%E8%83%BD/</link>
+    <pubDate>Wed, 27 Jul 2022 22:43:21 &#43;0800</pubDate>
+    <author>kay</author>
+    <guid>http://example.org/posts/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E4%BA%8Chugo%E6%B7%BB%E5%8A%A0gitalk%E8%AF%84%E8%AE%BA%E5%8A%9F%E8%83%BD/</guid>
+    <description><![CDATA[<p>好的想法需要交流。
+我们的博客已经搭建好了，可以再上面愉快的发文章，但是我们需要一个连接外界和别人交流的窗口，一如多年前QQ的四四方方的长条聊天框，拉近了我们彼此的联系。</p>]]></description>
+</item>
+<item>
     <title>博客搭建一：hugo</title>
     <link>http://example.org/posts/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E4%B8%80hugo/</link>
     <pubDate>Wed, 27 Jul 2022 21:47:21 &#43;0800</pubDate>
