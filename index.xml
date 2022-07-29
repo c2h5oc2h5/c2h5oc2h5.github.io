@@ -1,27 +1,85 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>子曰</title>
-        <link>http://example.org/</link>
-        <description>This is my cool site</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Wed, 27 Jul 2022 16:45:06 &#43;0800</lastBuildDate>
-            <atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+        <title>Ideas Worth Spreading</title>
+        <link>https://ziyue.tech/</link>
+        <description>wangkai&#39;s blog</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>support@ziyue.tech (kay)</managingEditor>
+            <webMaster>support@ziyue.tech (kay)</webMaster><lastBuildDate>Fri, 29 Jul 2022 15:14:53 &#43;0800</lastBuildDate>
+            <atom:link href="https://ziyue.tech/index.xml" rel="self" type="application/rss+xml" />
         <item>
-    <title>桃夭</title>
-    <link>http://example.org/posts/%E6%A1%83%E5%A4%AD/</link>
-    <pubDate>Wed, 27 Jul 2022 16:45:06 &#43;0800</pubDate>
-    <author>kay</author>
-    <guid>http://example.org/posts/%E6%A1%83%E5%A4%AD/</guid>
-    <description><![CDATA[佚名 〔先秦〕 桃之夭夭，灼灼其华。之子于归，宜其室家。 桃之夭夭，有蕡其实。之子于归，宜其家室。 桃之夭夭，其叶蓁蓁。之子于归，宜其家人。]]></description>
-</item>
-<item>
-    <title>关于我</title>
-    <link>http://example.org/posts/%E5%85%B3%E4%BA%8E%E6%88%91/</link>
+    <title>写在前面</title>
+    <link>https://ziyue.tech/posts/%E5%85%B3%E4%BA%8E%E6%88%91/</link>
     <pubDate>Wed, 27 Jul 2022 11:48:48 &#43;0800</pubDate>
     <author>kay</author>
-    <guid>http://example.org/posts/%E5%85%B3%E4%BA%8E%E6%88%91/</guid>
+    <guid>https://ziyue.tech/posts/%E5%85%B3%E4%BA%8E%E6%88%91/</guid>
     <description><![CDATA[<p>为什么要搭建自己的博客呢？</p>
 <p>契机</p>
 <p>对博文做个备份。</p>]]></description>
+</item>
+<item>
+    <title>4.5 pytho循环应用：蒙特卡洛方法计算圆周率</title>
+    <link>https://ziyue.tech/posts/4.5pytho%E5%BE%AA%E7%8E%AF%E5%BA%94%E7%94%A8%E8%92%99%E7%89%B9%E5%8D%A1%E6%B4%9B%E6%96%B9%E6%B3%95%E8%AE%A1%E7%AE%97%E5%9C%86%E5%91%A8%E7%8E%87/</link>
+    <pubDate>Fri, 29 Jul 2022 15:14:53 &#43;0800</pubDate>
+    <author>kay</author>
+    <guid>https://ziyue.tech/posts/4.5pytho%E5%BE%AA%E7%8E%AF%E5%BA%94%E7%94%A8%E8%92%99%E7%89%B9%E5%8D%A1%E6%B4%9B%E6%96%B9%E6%B3%95%E8%AE%A1%E7%AE%97%E5%9C%86%E5%91%A8%E7%8E%87/</guid>
+    <description><![CDATA[# 圆周率计算 蒙特卡洛 import random import time darts = 1000*1000 # 影响运行时间 hits = 0.0 start = time.perf_counter() # 程序的花费时间大都在循环语句上 for i in range(1, darts+1): x, y = random.random(), random.random() dist = pow(x ** 2 + y ** 2, 0.5) if dist &lt;= 1.0:]]></description>
+</item>
+<item>
+    <title>3.5 python文本进度条举一反三：渐变进度条</title>
+    <link>https://ziyue.tech/posts/3.5python%E6%96%87%E6%9C%AC%E8%BF%9B%E5%BA%A6%E6%9D%A1%E4%B8%BE%E4%B8%80%E5%8F%8D%E4%B8%89%E6%B8%90%E5%8F%98%E8%BF%9B%E5%BA%A6%E6%9D%A1/</link>
+    <pubDate>Fri, 29 Jul 2022 14:31:58 &#43;0800</pubDate>
+    <author>kay</author>
+    <guid>https://ziyue.tech/posts/3.5python%E6%96%87%E6%9C%AC%E8%BF%9B%E5%BA%A6%E6%9D%A1%E4%B8%BE%E4%B8%80%E5%8F%8D%E4%B8%89%E6%B8%90%E5%8F%98%E8%BF%9B%E5%BA%A6%E6%9D%A1/</guid>
+    <description><![CDATA[# textbar.py # 渐变显示进度条 import time scale = 50 print(&#34;执行开始&#34;.center(scale//2, &#34;-&#34;)) # str.center(width, fillchar)宽度和填充字]]></description>
+</item>
+<item>
+    <title>3.2 daydayup举一反三：三天打鱼两天晒网式学习</title>
+    <link>https://ziyue.tech/posts/3.2daydayup%E4%B8%BE%E4%B8%80%E5%8F%8D%E4%B8%89/</link>
+    <pubDate>Fri, 29 Jul 2022 14:28:55 &#43;0800</pubDate>
+    <author>kay</author>
+    <guid>https://ziyue.tech/posts/3.2daydayup%E4%B8%BE%E4%B8%80%E5%8F%8D%E4%B8%89/</guid>
+    <description><![CDATA[# daydayupQ5.py # 三天打鱼两天晒网式学习 # def保留字用于定义函数,本次返回一个dayup值 def dayUP(df): dayup = 1 for i in range(365): if i % 3 in [1,2]: # 120120120.... dayup = dayup * (1 - 0.01) else: dayup = dayup * (1]]></description>
+</item>
+<item>
+    <title>1.3 python温度转换程序</title>
+    <link>https://ziyue.tech/posts/1.3python%E6%B8%A9%E5%BA%A6%E8%BD%AC%E6%8D%A2%E7%A8%8B%E5%BA%8F/</link>
+    <pubDate>Fri, 29 Jul 2022 13:33:04 &#43;0800</pubDate>
+    <author>kay</author>
+    <guid>https://ziyue.tech/posts/1.3python%E6%B8%A9%E5%BA%A6%E8%BD%AC%E6%8D%A2%E7%A8%8B%E5%BA%8F/</guid>
+    <description><![CDATA[#TempConvert.py TempStr = input(&#34;请输入带有符号的温度值:&#34;) if TempStr[-1] in {&#39;F&#39;,&#39;f&#39;}: #这个字符串最后一个字符是否在这个列表里 C = (eval(TempStr[0:-1]) - 32) / 1.8 print(&]]></description>
+</item>
+<item>
+    <title>博客搭建三：hugo添加搜索功能</title>
+    <link>https://ziyue.tech/posts/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E4%B8%89hugo%E6%B7%BB%E5%8A%A0%E6%90%9C%E7%B4%A2%E5%8A%9F%E8%83%BD/</link>
+    <pubDate>Thu, 28 Jul 2022 01:45:41 &#43;0800</pubDate>
+    <author>kay</author>
+    <guid>https://ziyue.tech/posts/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E4%B8%89hugo%E6%B7%BB%E5%8A%A0%E6%90%9C%E7%B4%A2%E5%8A%9F%E8%83%BD/</guid>
+    <description><![CDATA[<p>博客搭建逐渐完善，博文内容也逐渐增多，添加搜索功能可以很方便的检索内容，对知识进行回顾，温故而知新。</p>]]></description>
+</item>
+<item>
+    <title>博客搭建二：hugo添加gitalk评论功能</title>
+    <link>https://ziyue.tech/posts/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E4%BA%8Chugo%E6%B7%BB%E5%8A%A0gitalk%E8%AF%84%E8%AE%BA%E5%8A%9F%E8%83%BD/</link>
+    <pubDate>Wed, 27 Jul 2022 22:43:21 &#43;0800</pubDate>
+    <author>kay</author>
+    <guid>https://ziyue.tech/posts/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E4%BA%8Chugo%E6%B7%BB%E5%8A%A0gitalk%E8%AF%84%E8%AE%BA%E5%8A%9F%E8%83%BD/</guid>
+    <description><![CDATA[<p>好的想法需要交流。
+我们的博客已经搭建好了，可以再上面愉快的发文章，但是我们需要一个连接外界和别人交流的窗口，一如多年前QQ的四四方方的长条聊天框，拉近了我们彼此的联系。</p>]]></description>
+</item>
+<item>
+    <title>博客搭建一：hugo</title>
+    <link>https://ziyue.tech/posts/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E4%B8%80hugo/</link>
+    <pubDate>Wed, 27 Jul 2022 21:47:21 &#43;0800</pubDate>
+    <author>kay</author>
+    <guid>https://ziyue.tech/posts/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E4%B8%80hugo/</guid>
+    <description><![CDATA[<p>打算把写博客长期坚持下去，考虑到后面博文数量会慢慢增多，hexo框架会越来越捉襟见肘，于是把博客从hexo迁移至hugo。</p>]]></description>
+</item>
+<item>
+    <title>桃夭</title>
+    <link>https://ziyue.tech/posts/%E6%A1%83%E5%A4%AD/</link>
+    <pubDate>Wed, 27 Jul 2022 16:45:06 &#43;0800</pubDate>
+    <author>kay</author>
+    <guid>https://ziyue.tech/posts/%E6%A1%83%E5%A4%AD/</guid>
+    <description><![CDATA[佚名 〔先秦〕 桃之夭夭，灼灼其华。之子于归，宜其室家。 桃之夭夭，有蕡其实。之子于归，宜其家室。 桃之夭夭，其叶蓁蓁。之子于归，宜其家人。]]></description>
 </item>
 </channel>
 </rss>
