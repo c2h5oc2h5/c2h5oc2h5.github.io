@@ -1,7 +1,11 @@
 {
 	"version": 3,
 	"file": "style.min.css",
+<<<<<<< HEAD
 	"sourceRoot": "D:/myblog",
+=======
+	"sourceRoot": "D:/Myblog",
+>>>>>>> 8054de0b4be319222d307a127380a28fbb69cfea
 	"sources": [
 		"themes/LoveIt/assets/css/style.scss",
 		"themes/LoveIt/assets/css/_variables.scss",
