@@ -3,9 +3,17 @@
         <title>Ideas Worth Spreading</title>
         <link>http://example.org/</link>
         <description>This is my cool site</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Wed, 27 Jul 2022 16:45:06 &#43;0800</lastBuildDate>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Wed, 27 Jul 2022 21:47:21 &#43;0800</lastBuildDate>
             <atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>博客搭建一：hugo</title>
+    <link>http://example.org/posts/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E4%B8%80hugo/</link>
+    <pubDate>Wed, 27 Jul 2022 21:47:21 &#43;0800</pubDate>
+    <author>kay</author>
+    <guid>http://example.org/posts/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E4%B8%80hugo/</guid>
+    <description><![CDATA[<p>打算把写博客长期坚持下去，考虑到后面博文数量会慢慢增多，hexo框架会越来越捉襟见肘，于是把博客从hexo迁移至hugo。</p>]]></description>
+</item>
+<item>
     <title>桃夭</title>
     <link>http://example.org/posts/%E6%A1%83%E5%A4%AD/</link>
     <pubDate>Wed, 27 Jul 2022 16:45:06 &#43;0800</pubDate>
