@@ -5,7 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="robots" content="noodp" />
         <title>博客搭建四：hugo添加友链 - Ideas Worth Spreading</title><meta name="Description" content="wangkai&#39;s blog"><meta property="og:title" content="博客搭建四：hugo添加友链" />
-<meta property="og:description" content="" />
+<meta property="og:description" content="交个朋友，为博客添加友链功能（还不完善，显示界面不美观），详情参看https://ziyue.tech/friend/
+有好的解决办法会继续在这里更新。" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://ziyue.tech/posts/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E5%9B%9Bhugo%E6%B7%BB%E5%8A%A0%E5%8F%8B%E9%93%BE/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2022-07-28T23:43:21+08:00" />
@@ -13,7 +14,8 @@
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="博客搭建四：hugo添加友链"/>
-<meta name="twitter:description" content=""/>
+<meta name="twitter:description" content="交个朋友，为博客添加友链功能（还不完善，显示界面不美观），详情参看https://ziyue.tech/friend/
+有好的解决办法会继续在这里更新。"/>
 <meta name="application-name" content="My cool site">
 <meta name="apple-mobile-web-app-title" content="My cool site"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -26,7 +28,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/ziyue.tech\/posts\/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E5%9B%9Bhugo%E6%B7%BB%E5%8A%A0%E5%8F%8B%E9%93%BE\/"
-        },"genre": "posts","keywords": "博客","wordcount":  0 ,
+        },"genre": "posts","keywords": "博客","wordcount":  2192 ,
         "url": "https:\/\/ziyue.tech\/posts\/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E5%9B%9Bhugo%E6%B7%BB%E5%8A%A0%E5%8F%8B%E9%93%BE\/","datePublished": "2022-07-28T23:43:21+08:00","dateModified": "2022-07-28T23:43:21+08:00","publisher": {
             "@type": "Organization",
             "name": ""},"author": {
@@ -102,15 +104,537 @@
         </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">博客搭建四：hugo添加友链</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>kay</a>
 </span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2022-07-28">2022-07-28</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;0 words&nbsp;
-                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;0 minutes&nbsp;</div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2022-07-28">2022-07-28</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;2192 words&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;5 minutes&nbsp;</div>
         </div><div class="details toc" id="toc-static"  data-kept="">
                 <div class="details-summary toc-title">
                     <span>Contents</span>
                     <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
                 </div>
                 <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents"></nav></div>
-            </div><div class="content" id="content"></div><div class="post-footer" id="post-footer">
+            </div><div class="content" id="content"><p>交个朋友，为博客添加友链功能（还不完善，显示界面不美观），详情参看<a href="https://ziyue.tech/friend/" target="_blank" rel="noopener noreffer">https://ziyue.tech/friend/</a>
+有好的解决办法会继续在这里更新。</p>
+<p><strong>hugo博客文件架构：</strong></p>
+<p>注：以下操作均在你的本地博客根目录下进行（换了主题理论上依然可用）</p>
+<pre tabindex="0"><code>config.toml：所有的hugo站点都有一个全局配置文件，用来配置整个站点的信息，hugo默认提供了跟多配置指令。
+content：站点下所有的内容页面，也就是我们创建的md文件都在这个content目录下面。
+data：data目录用来存储网站用到一些配置、数据文件。文件类型可以是yaml|toml|json等格式。
+layouts：存放用来渲染content目录下面内容的模版文件，模版.html格式结尾。
+【layouts可以同时存储在项目目录和themes//layouts目录下（不建议）。】
+static：用来存储图片、css、js等静态资源文件。
+themes：用来存储主题，主题可以方便的帮助我们快速建立站点，也可以方便的切换网站的风格样式。
+public：hugo编译后生成网站的所有文件都存储在这里面，把这个目录放到任意web服务器就可以发布网站成功。
+</code></pre><p><strong>首先，在博客根目录创建assets/css文件夹，在css文件夹下创建_page和_partial文件夹，在_page文件夹下创建_single.scss文件并填写以下内容(或者拷贝你主题文件夹下的该文件然后添加一句@import &ldquo;../_partial/_single/friend&rdquo;;）：</strong></p>
+<pre tabindex="0"><code>@import &#34;../_partial/_single/toc&#34;;
+@import &#34;../_partial/_single/friend&#34;;
+
+.single {
+  .single-title {
+    margin: 2rem 0 .5rem;
+    font-size: 1.6rem;
+    font-weight: bold;
+    line-height: 140%;
+  }
+
+  .single-subtitle {
+    margin: .5rem 0;
+    font-size: 1.2rem;
+    font-weight: normal;
+    line-height: 100%;
+  }
+
+  .post-meta {
+    font-size: .875rem;
+    color: $global-font-secondary-color;
+
+    span {
+      display: inline-block;
+    }
+
+    [theme=dark] &amp; {
+      color: $global-font-secondary-color-dark;
+    }
+
+    @include link(false, true);
+
+    .author {
+      font-size: 1.05rem;
+    }
+  }
+
+  .featured-image {
+    margin: .5rem 0 1rem 0;
+
+    img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      margin: 0 auto;
+      overflow: hidden;
+    }
+
+    img.lazyloaded {
+      width: 100%;
+    }
+  }
+
+  .content {
+    &gt; h2 {
+      font-size: 1.5rem;
+
+      &amp; code {
+        font-size: 1.25rem;
+      }
+    }
+
+    &gt; h3 {
+      font-size: 1.375rem;
+
+      &amp; code {
+        font-size: 1.125rem;
+      }
+    }
+
+    &gt; h4 {
+      font-size: 1.25rem;
+
+      &amp; code {
+        font-size: 1rem;
+      }
+    }
+
+    &gt; h5 {
+      font-size: 1.125rem;
+    }
+
+    &gt; h6 {
+      font-size: 1rem;
+    }
+
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-weight: bold;
+      margin: 1.2rem 0;
+
+      [theme=dark] &amp; {
+        font-weight: bolder;
+      }
+    }
+
+    &gt; h2,
+    &gt; h3,
+    &gt; h4,
+    &gt; h5,
+    &gt; h6 {
+      &gt; .header-mark::before {
+        content: &#34;|&#34;;
+        margin-right: .3125rem;
+        color: $single-link-color;
+
+        [theme=dark] &amp; {
+          color: $single-link-color-dark;
+        }
+      }
+    }
+
+    &gt; h2 &gt; .header-mark::before {
+      content: &#34;#&#34;;
+    }
+
+    p {
+      margin: .5rem 0;
+    }
+
+    b, strong {
+      font-weight: bold;
+
+      [theme=dark] &amp; {
+        color: #ddd;
+      }
+    }
+
+    @include link(false, false);
+
+    a {
+      @include overflow-wrap(break-word);
+
+      [theme=dark] &amp; b, [theme=dark] &amp; strong {
+        color: $single-link-color-dark;
+      }
+    }
+
+    [theme=dark] a:hover b, [theme=dark] a:hover strong {
+      color: $single-link-hover-color-dark;
+    }
+
+    ul, ol {
+      margin: .5rem 0;
+      padding-left: 2.5rem;
+    }
+
+    ul {
+      list-style-type: disc;
+    }
+
+    ruby {
+      background: $code-background-color;
+
+      rt {
+        color: $global-font-secondary-color;
+      }
+
+      [theme=dark] &amp; {
+        background: $code-background-color-dark;
+
+        rt {
+          color: $global-font-secondary-color-dark;
+        }
+      }
+    }
+
+    .table-wrapper {
+      overflow-x: auto;
+
+      &amp;::-webkit-scrollbar {
+        background-color: $table-background-color;
+
+        [theme=dark] &amp; {
+          background-color: $table-background-color-dark;
+        }
+      }
+
+      &gt; table {
+        width: 100%;
+        max-width: 100%;
+        margin: .625rem 0;
+        border-spacing: 0;
+        background: $table-background-color;
+        border-collapse: collapse;
+
+        [theme=dark] &amp; {
+          background: $table-background-color-dark;
+        }
+
+        thead {
+          background: $table-thead-color;
+
+          [theme=dark] &amp; {
+            background-color: $table-thead-color-dark;
+          }
+        }
+
+        th, td {
+          padding: .3rem 1rem;
+          border: 1px solid darken($table-thead-color, 2%);
+
+          [theme=dark] &amp; {
+            border-color: darken($table-thead-color-dark, 2%);
+          }
+        }
+      }
+    }
+
+    img {
+      max-width: 100%;
+      min-height: 1em;
+    }
+
+    figure {
+      margin: .5rem;
+      text-align: center;
+
+      .image-caption:not(:empty) {
+        min-width: 20%;
+        max-width: 80%;
+        display: inline-block;
+        padding: .5rem;
+        margin: 0 auto;
+        font-size: .875rem;
+        color: #969696;
+      }
+
+      img {
+        display: block;
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        overflow: hidden;
+      }
+    }
+
+    .lazyload, .lazyloading {
+      @include object-fit(scale-down);
+    }
+
+    .lazyloaded {
+      @include object-fit(fill);
+    }
+
+    blockquote {
+      display: block;
+      border-left: .5rem solid $blockquote-color;
+      background-color: rgba($blockquote-color, .2);
+      padding: .25rem .75rem;
+      margin: 1rem 0;
+
+      [theme=dark] &amp; {
+        border-left-color: $blockquote-color-dark;
+        background-color: rgba($blockquote-color-dark, .2);
+      }
+    }
+
+    .footnotes {
+      color: $global-font-secondary-color;
+
+      [theme=dark] &amp; {
+        color: $global-font-secondary-color-dark;
+      }
+
+      p {
+        margin: .25rem 0;
+      }
+    }
+
+    @import &#34;../_partial/_single/code&#34;;
+    @import &#34;../_partial/_single/instagram&#34;;
+    @import &#34;../_partial/_single/admonition&#34;;
+    @import &#34;../_partial/_single/echarts&#34;;
+    @import &#34;../_partial/_single/mapbox&#34;;
+    @import &#34;../_partial/_single/music&#34;;
+    @import &#34;../_partial/_single/bilibili&#34;;
+
+    hr {
+      margin: 1rem 0;
+      position: relative;
+      border-top: 1px dashed $global-border-color;
+      border-bottom: none;
+
+      [theme=dark] &amp; {
+        border-top: 1px dashed $global-border-color-dark;
+      }
+    }
+
+    kbd {
+      display: inline-block;
+      padding: .25rem;
+      background-color: $global-background-color;
+      border: 1px solid $global-border-color;
+      border-bottom-color: $global-border-color;
+      @include border-radius(3px);
+      @include box-shadow(inset 0 -1px 0 $global-border-color);
+      font-size: .8rem;
+      font-family: $code-font-family;
+      color: $code-color;
+
+      [theme=dark] &amp; {
+        background-color: $global-background-color-dark;
+        border: 1px solid $global-border-color-dark;
+        border-bottom-color: $global-border-color-dark;
+        @include box-shadow(inset 0 -1px 0 $global-border-color-dark);
+        color: $code-color-dark;
+      }
+    }
+
+    .version {
+      height: 1.25em;
+      vertical-align: text-bottom;
+    }
+  }
+
+  @import &#34;../_partial/_single/footer&#34;;
+  @import &#34;../_partial/_single/comment&#34;;
+}
+
+.typeit {
+  .highlight {
+    padding: .375rem;
+    font-size: .875rem;
+    font-family: $code-font-family;
+    font-weight: bold;
+    word-break: break-all;
+    white-space: pre-wrap;
+  }
+
+  --ti-cursor-font-family: $global-font-family;
+  --ti-cursor-font-size: $global-font-size;
+  --ti-cursor-font-weight: $global-font-weight;
+  --ti-cursor-line-height: $global-line-height;
+  --ti-cursor-color: $global-font-secondary-color;
+  --ti-cursor-margin-left: 0;
+
+  [theme=dark] &amp; {
+    --ti-cursor-color: $global-font-secondary-color-dark;
+  }
+}
+
+.lg-toolbar .lg-icon::after {
+  color: #999;
+}
+</code></pre><p><strong>然后，在D:\myblog\assets\css_partial下创建_single文件夹，并在_single文件夹下创建_friend.scss文件，填写以下内容：</strong></p>
+<pre tabindex="0"><code>#article-container {
+ word-wrap: break-word;
+ overflow-wrap: break-word
+}
+
+#article-container a {
+ color: #49b1f5
+}
+
+#article-container a:hover {
+ text-decoration: underline
+}
+
+#article-container img {
+ margin: 0 auto .8rem
+}
+
+.flink#article-container .friend-list-div &gt; .friend-div a .friend-info,
+.flink#article-container .friend-list-div &gt; .friend-div a .friend-name {
+ overflow: hidden;
+ -o-text-overflow: ellipsis;
+ text-overflow: ellipsis;
+ white-space: nowrap
+}
+
+.flink#article-container .friend-list-div {
+ overflow: auto;
+ padding: 10px 10px 0;
+ text-align: center;
+}
+.flink#article-container .friend-list-div &gt; .friend-div {
+ position: relative;
+ float: left;
+ overflow: hidden;
+ margin: 15px 7px;
+ width: calc(100% / 3 - 15px);
+ height: 90px;
+ border-radius: 8px;
+ line-height: 17px;
+ -webkit-transform: translateZ(0)
+}
+
+@media screen and (max-width: 1100px) {
+ .flink#article-container .friend-list-div &gt; .friend-div {
+  width: calc(50% - 15px) !important
+ }
+
+@media screen and (max-width: 600px) {
+ .flink#article-container .friend-list-div &gt; .friend-div {
+  width: calc(100% - 15px) !important
+ }
+}
+}
+
+.flink#article-container .friend-list-div &gt; .friend-div:hover {
+ background: rgba(87, 142, 224, 0.15);
+}
+
+.flink#article-container .friend-list-div &gt; .friend-div:hover img {
+ -webkit-transform: rotate(360deg);
+ -moz-transform: rotate(360deg);
+ -o-transform: rotate(360deg);
+ -ms-transform: rotate(360deg);
+ transform: rotate(360deg)
+}
+
+.flink#article-container .friend-list-div &gt; .friend-div:before {
+ position: absolute;
+ top: 0;
+ right: 0;
+ bottom: 0;
+ left: 0;
+ z-index: -1;
+ background: var(--text-bg-hover);
+ content: &#39;&#39;;
+ -webkit-transition: -webkit-transform .3s ease-out;
+ -moz-transition: -moz-transform .3s ease-out;
+ -o-transition: -o-transform .3s ease-out;
+ -ms-transition: -ms-transform .3s ease-out;
+ transition: transform .3s ease-out;
+ -webkit-transform: scale(0);
+ -moz-transform: scale(0);
+ -o-transform: scale(0);
+ -ms-transform: scale(0);
+ transform: scale(0)
+}
+.flink#article-container .friend-list-div &gt; .friend-div:hover:before,
+.flink#article-container .friend-list-div &gt; .friend-div:focus:before,
+.flink#article-container .friend-list-div &gt; .friend-div:active:before {
+ -webkit-transform: scale(1);
+ -moz-transform: scale(1);
+ -o-transform: scale(1);
+ -ms-transform: scale(1);
+ transform: scale(1)
+}
+.flink#article-container .friend-list-div &gt; .friend-div a {
+ color: var(--font-color);
+ text-decoration: none
+}
+
+.flink#article-container .friend-list-div &gt; .friend-div a img{
+ float: left;
+ margin: 15px 10px;
+ width: 60px;
+ height: 60px;
+ border-radius: 35px;
+ -webkit-transition: all .3s;
+ -moz-transition: all .3s;
+ -o-transition: all .3s;
+ -ms-transition: all .3s;
+ transition: all .3s
+}
+
+.flink#article-container .friend-list-div &gt; .friend-div a .friend-name {
+ display: block;
+ padding: 16px 10px 0 0;
+ height: 40px;
+ font-weight: 700;
+ font-size: 20px
+}
+
+.flink#article-container .friend-list-div &gt; .friend-div a .friend-info {
+ display: block;
+ padding: 1px 10px 1px 0;
+ height: 50px;
+ font-size: 13px
+}
+</code></pre><p><strong>在博客根目录layouts文件夹下创建shortcodes文件夹，然后在该文件夹下创建friend.html文件并填写以下内容：</strong></p>
+<pre tabindex="0"><code>{{ if .IsNamedParams }}
+    {{- $src := .Get &#34;logo&#34; -}}
+    {{- $small := .Get &#34;logo_small&#34; | default $src -}}
+    {{- $large := .Get &#34;logo_large&#34; | default $src -}}
+    &lt;div class=&#34;friend-div&#34;&gt;
+        &lt;a target=&#34;_blank&#34; href={{ .Get &#34;url&#34;  | safeURL }} title={{ .Get &#34;name&#34; }} &gt;
+            &lt;img class=&#34;lazyload&#34;
+                 src=&#34;/svg/loading.min.svg&#34;
+                 data-src={{ $src | safeURL }}
+                 alt={{ .Get &#34;name&#34; }}
+                 data-sizes=&#34;auto&#34;
+                 data-srcset=&#34;{{ $small | safeURL }}, {{ $src | safeURL }} 1.5x, {{ $large | safeURL }} 2x&#34; /&gt;
+            &lt;span class=&#34;friend-name&#34;&gt;{{ .Get &#34;name&#34; }}&lt;/span&gt;
+            &lt;span class=&#34;friend-info&#34;&gt;{{ .Get &#34;word&#34; }}&lt;/span&gt;
+        &lt;/a&gt;
+    &lt;/div&gt;
+{{ end }}
+</code></pre><p><strong>最后，在博客根目录content里创建friend文件夹并创建index.md文件，在配置文件里修改菜单增加友链按钮。</strong></p>
+<pre tabindex="0"><code>[[menu.main]]
+    weight = 6 # 友链这个按钮的权重，数字越大排位越靠后
+    identifier = &#34;friend&#34;
+    name = &#34;友链&#34;
+    url = &#34;/friend/&#34;
+</code></pre><p><strong>在index.md文件里添加以下内容即可，就是正常的md文件，可任意在别的区域增加你想显示的信息，这个 花括号花括号&lt; friend name=&ldquo;kai&rdquo; url=&ldquo;http://<!-- raw HTML omitted --><!-- raw HTML omitted -->ziyue.tech&rdquo; logo=&ldquo;https://<!-- raw HTML omitted --><!-- raw HTML omitted -->s2.loli.net/2022/07/26/T4VPEMvKFzQ3O1A.jpg&rdquo; word=&ldquo;A funny guy&rdquo; &gt;}}是你要添加的友链，在对应的双引号区间填写具体信息。（注：【 div class=&ldquo;friend-list-div&rdquo; 】下要保留一个空行，如果删去友链会显示不出来，我试出来的（滑稽），层级关系之间缩进2个空格）</strong></p>
+<pre tabindex="0"><code>&lt;div class=&#34;flink&#34; id=&#34;article-container&#34;&gt;
+  &lt;div class=&#34;friend-list-div&#34; &gt;
+
+    花括号花括号&lt; friend name=&#34;名字&#34; url=&#34;博客地址&#34; logo=&#34;logo图片地址&#34; word=&#34;个人介绍&#34; &gt;}}
+    ...
+
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre><p>嗯，暂时这样，由hexo迁移至hugo博客功能基本完善了，这个系列应该也就完更了，后面就是好好写内容。</p></div><div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">
             <div class="post-info-mod">
