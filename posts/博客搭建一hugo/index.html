@@ -26,7 +26,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/ziyue.tech\/posts\/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E4%B8%80hugo\/"
-        },"genre": "posts","keywords": "博客","wordcount":  1245 ,
+        },"genre": "posts","keywords": "博客","wordcount":  1357 ,
         "url": "https:\/\/ziyue.tech\/posts\/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E4%B8%80hugo\/","datePublished": "2022-07-27T21:47:21+08:00","dateModified": "2022-07-27T21:47:21+08:00","publisher": {
             "@type": "Organization",
             "name": ""},"author": {
@@ -100,9 +100,9 @@
             <h2 class="toc-title">Contents</h2>
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">博客搭建一：hugo</h1><div class="post-meta">
-            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>亲自巡山的大王</a>
+            <div class="post-meta-line"><span class="post-author"><a href="https://blog.csdn.net/bytestudio?type=blog" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>亲自巡山的大王</a>
 </span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2022-07-27">2022-07-27</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;1245 words&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2022-07-27">2022-07-27</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;1357 words&nbsp;
                 <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;3 minutes&nbsp;</div>
         </div><div class="details toc" id="toc-static"  data-kept="">
                 <div class="details-summary toc-title">
@@ -120,6 +120,7 @@
         <li><a href="#选择一个博客主题">选择一个博客主题</a></li>
         <li><a href="#新建一篇博文">新建一篇博文</a></li>
         <li><a href="#部署博客">部署博客</a></li>
+        <li><a href="#另">另：</a></li>
       </ul>
     </li>
   </ul>
@@ -167,7 +168,8 @@
 </code></pre><pre tabindex="0"><code>git commit -m &#34;add blog post&#34;
 </code></pre><pre tabindex="0"><code>git push
 </code></pre><p>至此你的博客基本上就搭建好了，后面就是写博客和选主题了，至于主题如何选，就仁者见仁智者见智了。</p>
-<p>另：如何更改网站图标, 浏览器配置？</p>
+<h3 id="另">另：</h3>
+<p>1.如何更改网站图标, 浏览器配置？</p>
 <pre tabindex="0"><code>apple-touch-icon.png (180x180)
 favicon-32x32.png (32x32)
 favicon-16x16.png (16x16)
@@ -175,7 +177,17 @@ mstile-150x150.png (150x150)
 android-chrome-192x192.png (192x192)
 android-chrome-512x512.png (512x512)
 </code></pre><p>放在博客根目录 /static 目录即可， 可以在 <a href="https://realfavicongenerator.net/" target="_blank" rel="noopener noreffer">https://realfavicongenerator.net/</a>
- 网站上将图片生成这些文件，部署到GitHub pages上时可能不会立即生效。</p></div><div class="post-footer" id="post-footer">
+ 网站上将图片生成这些文件，部署到GitHub pages上时可能不会立即生效。</p>
+<p>2.如何更新博客？
+2.1 在博客根目录运行cmd命令</p>
+<pre tabindex="0"><code>hugo new posts/新博文名字.md
+</code></pre><p>2.2 编写博文内容</p>
+<p>2.3 将博文部署到GitHub pages</p>
+<p>在博客根目录的public文件里git bash huer</p>
+<pre tabindex="0"><code>git add .
+</code></pre><pre tabindex="0"><code>git commit -m &#34;更改说明（例如添加博客）add blog&#34;
+</code></pre><pre tabindex="0"><code>git push
+</code></pre></div><div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">
             <div class="post-info-mod">
@@ -205,7 +217,7 @@ android-chrome-512x512.png (512x512)
             </main><footer class="footer">
         <div class="footer-container"><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
             <span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
-            <div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2022</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">亲自巡山的大王</a></span><span class="icp-splitter">&nbsp;|&nbsp;</span><br class="icp-br"/>
+            <div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2022</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="https://blog.csdn.net/bytestudio?type=blog" target="_blank">亲自巡山的大王</a></span><span class="icp-splitter">&nbsp;|&nbsp;</span><br class="icp-br"/>
                     <span class="icp">ZIYUE.TECH 版权所有 [豫ICP备12138号]</span></div>
         </div>
     </footer></div>

@@ -4,7 +4,7 @@
         <link>https://ziyue.tech/</link>
         <description>wangkai&#39;s blog</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>support@ziyue.tech (亲自巡山的大王)</managingEditor>
-            <webMaster>support@ziyue.tech (亲自巡山的大王)</webMaster><lastBuildDate>Fri, 29 Jul 2022 15:14:53 &#43;0800</lastBuildDate>
+            <webMaster>support@ziyue.tech (亲自巡山的大王)</webMaster><lastBuildDate>Sat, 30 Jul 2022 15:08:24 &#43;0800</lastBuildDate>
             <atom:link href="https://ziyue.tech/index.xml" rel="self" type="application/rss+xml" />
         <item>
     <title>写在前面</title>
@@ -15,6 +15,14 @@
     <description><![CDATA[<p>为什么要搭建自己的博客呢？</p>
 <p>契机</p>
 <p>对博文做个备份。</p>]]></description>
+</item>
+<item>
+    <title>5.2 Python数码管绘制举一反三：数码管倒计时</title>
+    <link>https://ziyue.tech/posts/5.2python%E6%95%B0%E7%A0%81%E7%AE%A1%E7%BB%98%E5%88%B6%E4%B8%BE%E4%B8%80%E5%8F%8D%E4%B8%89%E6%95%B0%E7%A0%81%E7%AE%A1%E5%80%92%E8%AE%A1%E6%97%B6/</link>
+    <pubDate>Sat, 30 Jul 2022 15:08:24 &#43;0800</pubDate>
+    <author>亲自巡山的大王</author>
+    <guid>https://ziyue.tech/posts/5.2python%E6%95%B0%E7%A0%81%E7%AE%A1%E7%BB%98%E5%88%B6%E4%B8%BE%E4%B8%80%E5%8F%8D%E4%B8%89%E6%95%B0%E7%A0%81%E7%AE%A1%E5%80%92%E8%AE%A1%E6%97%B6/</guid>
+    <description><![CDATA[python数码管程序举一反三，构建数码管倒计时 # 倒计时 # 模块化思维解决问题 import turtle as t #t.speed(10) 调节画笔快慢 def drawGap():#数码管间隔 t.penup() t.fd(5) def d]]></description>
 </item>
 <item>
     <title>4.5 pytho循环应用：蒙特卡洛方法计算圆周率</title>
@@ -81,14 +89,6 @@
     <author>亲自巡山的大王</author>
     <guid>https://ziyue.tech/posts/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E4%B8%80hugo/</guid>
     <description><![CDATA[<p>打算把写博客长期坚持下去，考虑到后面博文数量会慢慢增多，hexo框架会越来越捉襟见肘，于是把博客从hexo迁移至hugo。</p>]]></description>
-</item>
-<item>
-    <title>桃夭</title>
-    <link>https://ziyue.tech/posts/%E6%A1%83%E5%A4%AD/</link>
-    <pubDate>Wed, 27 Jul 2022 16:45:06 &#43;0800</pubDate>
-    <author>亲自巡山的大王</author>
-    <guid>https://ziyue.tech/posts/%E6%A1%83%E5%A4%AD/</guid>
-    <description><![CDATA[佚名 〔先秦〕 桃之夭夭，灼灼其华。之子于归，宜其室家。 桃之夭夭，有蕡其实。之子于归，宜其家室。 桃之夭夭，其叶蓁蓁。之子于归，宜其家人。]]></description>
 </item>
 </channel>
 </rss>
