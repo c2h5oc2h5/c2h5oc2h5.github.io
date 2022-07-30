@@ -138,89 +138,89 @@
 <h3 id="pyinstaller库安装">Pyinstaller库安装</h3>
 <pre tabindex="0"><code>pip install pyinstaller
 </code></pre><p>报错</p>
-<pre tabindex="0"><code class="language-bush" data-lang="bush">Collecting pyinstaller
-  Downloading pyinstaller-5.2-py3-none-win32.whl (1.1 MB)
-     |▌                               | 20 kB 8.8 kB/s eta 0:02:05ERROR: Exception:
-Traceback (most recent call last):
-  File &#34;C:\Users\kai\AppData\Local\Programs\Python\Python310-32\lib\site-packages\pip\_vendor\urllib3\response.py&#34;, line 438, in _error_catcher
-    yield
-  File &#34;C:\Users\kai\AppData\Local\Programs\Python\Python310-32\lib\site-packages\pip\_vendor\urllib3\response.py&#34;, line 519, in read
-    data = self._fp.read(amt) if not fp_closed else b&#34;&#34;
-  File &#34;C:\Users\kai\AppData\Local\Programs\Python\Python310-32\lib\site-packages\pip\_vendor\cachecontrol\filewrapper.py&#34;, line 62, in read
-    data = self.__fp.read(amt)
-  File &#34;C:\Users\kai\AppData\Local\Programs\Python\Python310-32\lib\http\client.py&#34;, line 464, in read
-    s = self.fp.read(amt)
-  File &#34;C:\Users\kai\AppData\Local\Programs\Python\Python310-32\lib\socket.py&#34;, line 705, in readinto
-    return self._sock.recv_into(b)
-  File &#34;C:\Users\kai\AppData\Local\Programs\Python\Python310-32\lib\ssl.py&#34;, line 1273, in recv_into
-    return self.read(nbytes, buffer)
-  File &#34;C:\Users\kai\AppData\Local\Programs\Python\Python310-32\lib\ssl.py&#34;, line 1129, in read
-    return self._sslobj.read(len, buffer)
-TimeoutError: The read operation timed out
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File &#34;C:\Users\kai\AppData\Local\Programs\Python\Python310-32\lib\site-packages\pip\_internal\cli\base_command.py&#34;, line 173, in _main
-    status = self.run(options, args)
-  File &#34;C:\Users\kai\AppData\Local\Programs\Python\Python310-32\lib\site-packages\pip\_internal\cli\req_command.py&#34;, line 203, in wrapper
-    return func(self, options, args)
-  File &#34;C:\Users\kai\AppData\Local\Programs\Python\Python310-32\lib\site-packages\pip\_internal\commands\install.py&#34;, line 315, in run
-    requirement_set = resolver.resolve(
-  File &#34;C:\Users\kai\AppData\Local\Programs\Python\Python310-32\lib\site-packages\pip\_internal\resolution\resolvelib\resolver.py&#34;, line 94, in resolve
-    result = self._result = resolver.resolve(
-  File &#34;C:\Users\kai\AppData\Local\Programs\Python\Python310-32\lib\site-packages\pip\_vendor\resolvelib\resolvers.py&#34;, line 472, in resolve
-    state = resolution.resolve(requirements, max_rounds=max_rounds)
-  File &#34;C:\Users\kai\AppData\Local\Programs\Python\Python310-32\lib\site-packages\pip\_vendor\resolvelib\resolvers.py&#34;, line 341, in resolve
-    self._add_to_criteria(self.state.criteria, r, parent=None)
-  File &#34;C:\Users\kai\AppData\Local\Programs\Python\Python310-32\lib\site-packages\pip\_vendor\resolvelib\resolvers.py&#34;, line 172, in _add_to_criteria
-    if not criterion.candidates:
-  File &#34;C:\Users\kai\AppData\Local\Programs\Python\Python310-32\lib\site-packages\pip\_vendor\resolvelib\structs.py&#34;, line 151, in __bool__
-    return bool(self._sequence)
-  File &#34;C:\Users\kai\AppData\Local\Programs\Python\Python310-32\lib\site-packages\pip\_internal\resolution\resolvelib\found_candidates.py&#34;, line 140, in __bool__
-    return any(self)
-  File &#34;C:\Users\kai\AppData\Local\Programs\Python\Python310-32\lib\site-packages\pip\_internal\resolution\resolvelib\found_candidates.py&#34;, line 128, in &lt;genexpr&gt;
-    return (c for c in iterator if id(c) not in self._incompatible_ids)
-  File &#34;C:\Users\kai\AppData\Local\Programs\Python\Python310-32\lib\site-packages\pip\_internal\resolution\resolvelib\found_candidates.py&#34;, line 32, in _iter_built
-    candidate = func()
-  File &#34;C:\Users\kai\AppData\Local\Programs\Python\Python310-32\lib\site-packages\pip\_internal\resolution\resolvelib\factory.py&#34;, line 204, in _make_candidate_from_link
-    self._link_candidate_cache[link] = LinkCandidate(
-  File &#34;C:\Users\kai\AppData\Local\Programs\Python\Python310-32\lib\site-packages\pip\_internal\resolution\resolvelib\candidates.py&#34;, line 295, in __init__
-    super().__init__(
-  File &#34;C:\Users\kai\AppData\Local\Programs\Python\Python310-32\lib\site-packages\pip\_internal\resolution\resolvelib\candidates.py&#34;, line 156, in __init__
-    self.dist = self._prepare()
-  File &#34;C:\Users\kai\AppData\Local\Programs\Python\Python310-32\lib\site-packages\pip\_internal\resolution\resolvelib\candidates.py&#34;, line 227, in _prepare
-    dist = self._prepare_distribution()
-  File &#34;C:\Users\kai\AppData\Local\Programs\Python\Python310-32\lib\site-packages\pip\_internal\resolution\resolvelib\candidates.py&#34;, line 305, in _prepare_distribution
-    return self._factory.preparer.prepare_linked_requirement(
-  File &#34;C:\Users\kai\AppData\Local\Programs\Python\Python310-32\lib\site-packages\pip\_internal\operations\prepare.py&#34;, line 508, in prepare_linked_requirement
-    return self._prepare_linked_requirement(req, parallel_builds)
-  File &#34;C:\Users\kai\AppData\Local\Programs\Python\Python310-32\lib\site-packages\pip\_internal\operations\prepare.py&#34;, line 550, in _prepare_linked_requirement
-    local_file = unpack_url(
-  File &#34;C:\Users\kai\AppData\Local\Programs\Python\Python310-32\lib\site-packages\pip\_internal\operations\prepare.py&#34;, line 239, in unpack_url
-    file = get_http_url(
-  File &#34;C:\Users\kai\AppData\Local\Programs\Python\Python310-32\lib\site-packages\pip\_internal\operations\prepare.py&#34;, line 102, in get_http_url
-    from_path, content_type = download(link, temp_dir.path)
-  File &#34;C:\Users\kai\AppData\Local\Programs\Python\Python310-32\lib\site-packages\pip\_internal\network\download.py&#34;, line 145, in __call__
-    for chunk in chunks:
-  File &#34;C:\Users\kai\AppData\Local\Programs\Python\Python310-32\lib\site-packages\pip\_internal\cli\progress_bars.py&#34;, line 144, in iter
-    for x in it:
-  File &#34;C:\Users\kai\AppData\Local\Programs\Python\Python310-32\lib\site-packages\pip\_internal\network\utils.py&#34;, line 63, in response_chunks
-    for chunk in response.raw.stream(
-  File &#34;C:\Users\kai\AppData\Local\Programs\Python\Python310-32\lib\site-packages\pip\_vendor\urllib3\response.py&#34;, line 576, in stream
-    data = self.read(amt=amt, decode_content=decode_content)
-  File &#34;C:\Users\kai\AppData\Local\Programs\Python\Python310-32\lib\site-packages\pip\_vendor\urllib3\response.py&#34;, line 512, in read
-    with self._error_catcher():
-  File &#34;C:\Users\kai\AppData\Local\Programs\Python\Python310-32\lib\contextlib.py&#34;, line 153, in __exit__
-    self.gen.throw(typ, value, traceback)
-  File &#34;C:\Users\kai\AppData\Local\Programs\Python\Python310-32\lib\site-packages\pip\_vendor\urllib3\response.py&#34;, line 443, in _error_catcher
-    raise ReadTimeoutError(self._pool, None, &#34;Read timed out.&#34;)
-pip._vendor.urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host=&#39;files.pythonhosted.org&#39;, port=443): Read timed out.
-WARNING: You are using pip version 21.2.3; however, version 22.1.2 is available.
-You should consider upgrading via the &#39;C:\Users\kai\AppData\Local\Programs\Python\Python310-32\python.exe -m pip install --upgrade pip&#39; command.
-</code></pre><p>解决办法</p>
-<pre tabindex="0"><code class="language-bush" data-lang="bush">python -m pip install -U pip
-</code></pre><pre tabindex="0"><code class="language-bush" data-lang="bush">Requirement already satisfied: pip in c:\users\kai\appdata\local\programs\python\python310-32\lib\site-packages (21.2.3)
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">Collecting pyinstaller
+</span></span><span class="line"><span class="cl">  Downloading pyinstaller-5.2-py3-none-win32.whl <span class="o">(</span>1.1 MB<span class="o">)</span>
+</span></span><span class="line"><span class="cl">     <span class="p">|</span>▌                               <span class="p">|</span> <span class="m">20</span> kB 8.8 kB/s eta 0:02:05ERROR: Exception:
+</span></span><span class="line"><span class="cl">Traceback <span class="o">(</span>most recent call last<span class="o">)</span>:
+</span></span><span class="line"><span class="cl">  File <span class="s2">&#34;C:\Users\kai\AppData\Local\Programs\Python\Python310-32\lib\site-packages\pip\_vendor\urllib3\response.py&#34;</span>, line 438, in _error_catcher
+</span></span><span class="line"><span class="cl">    yield
+</span></span><span class="line"><span class="cl">  File <span class="s2">&#34;C:\Users\kai\AppData\Local\Programs\Python\Python310-32\lib\site-packages\pip\_vendor\urllib3\response.py&#34;</span>, line 519, in <span class="nb">read</span>
+</span></span><span class="line"><span class="cl">    <span class="nv">data</span> <span class="o">=</span> self._fp.read<span class="o">(</span>amt<span class="o">)</span> <span class="k">if</span> not fp_closed <span class="k">else</span> b<span class="s2">&#34;&#34;</span>
+</span></span><span class="line"><span class="cl">  File <span class="s2">&#34;C:\Users\kai\AppData\Local\Programs\Python\Python310-32\lib\site-packages\pip\_vendor\cachecontrol\filewrapper.py&#34;</span>, line 62, in <span class="nb">read</span>
+</span></span><span class="line"><span class="cl">    <span class="nv">data</span> <span class="o">=</span> self.__fp.read<span class="o">(</span>amt<span class="o">)</span>
+</span></span><span class="line"><span class="cl">  File <span class="s2">&#34;C:\Users\kai\AppData\Local\Programs\Python\Python310-32\lib\http\client.py&#34;</span>, line 464, in <span class="nb">read</span>
+</span></span><span class="line"><span class="cl">    <span class="nv">s</span> <span class="o">=</span> self.fp.read<span class="o">(</span>amt<span class="o">)</span>
+</span></span><span class="line"><span class="cl">  File <span class="s2">&#34;C:\Users\kai\AppData\Local\Programs\Python\Python310-32\lib\socket.py&#34;</span>, line 705, in readinto
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> self._sock.recv_into<span class="o">(</span>b<span class="o">)</span>
+</span></span><span class="line"><span class="cl">  File <span class="s2">&#34;C:\Users\kai\AppData\Local\Programs\Python\Python310-32\lib\ssl.py&#34;</span>, line 1273, in recv_into
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> self.read<span class="o">(</span>nbytes, buffer<span class="o">)</span>
+</span></span><span class="line"><span class="cl">  File <span class="s2">&#34;C:\Users\kai\AppData\Local\Programs\Python\Python310-32\lib\ssl.py&#34;</span>, line 1129, in <span class="nb">read</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> self._sslobj.read<span class="o">(</span>len, buffer<span class="o">)</span>
+</span></span><span class="line"><span class="cl">TimeoutError: The <span class="nb">read</span> operation timed out
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">During handling of the above exception, another exception occurred:
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Traceback <span class="o">(</span>most recent call last<span class="o">)</span>:
+</span></span><span class="line"><span class="cl">  File <span class="s2">&#34;C:\Users\kai\AppData\Local\Programs\Python\Python310-32\lib\site-packages\pip\_internal\cli\base_command.py&#34;</span>, line 173, in _main
+</span></span><span class="line"><span class="cl">    <span class="nv">status</span> <span class="o">=</span> self.run<span class="o">(</span>options, args<span class="o">)</span>
+</span></span><span class="line"><span class="cl">  File <span class="s2">&#34;C:\Users\kai\AppData\Local\Programs\Python\Python310-32\lib\site-packages\pip\_internal\cli\req_command.py&#34;</span>, line 203, in wrapper
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> func<span class="o">(</span>self, options, args<span class="o">)</span>
+</span></span><span class="line"><span class="cl">  File <span class="s2">&#34;C:\Users\kai\AppData\Local\Programs\Python\Python310-32\lib\site-packages\pip\_internal\commands\install.py&#34;</span>, line 315, in run
+</span></span><span class="line"><span class="cl">    <span class="nv">requirement_set</span> <span class="o">=</span> resolver.resolve<span class="o">(</span>
+</span></span><span class="line"><span class="cl">  File <span class="s2">&#34;C:\Users\kai\AppData\Local\Programs\Python\Python310-32\lib\site-packages\pip\_internal\resolution\resolvelib\resolver.py&#34;</span>, line 94, in resolve
+</span></span><span class="line"><span class="cl">    <span class="nv">result</span> <span class="o">=</span> self._result <span class="o">=</span> resolver.resolve<span class="o">(</span>
+</span></span><span class="line"><span class="cl">  File <span class="s2">&#34;C:\Users\kai\AppData\Local\Programs\Python\Python310-32\lib\site-packages\pip\_vendor\resolvelib\resolvers.py&#34;</span>, line 472, in resolve
+</span></span><span class="line"><span class="cl">    <span class="nv">state</span> <span class="o">=</span> resolution.resolve<span class="o">(</span>requirements, <span class="nv">max_rounds</span><span class="o">=</span>max_rounds<span class="o">)</span>
+</span></span><span class="line"><span class="cl">  File <span class="s2">&#34;C:\Users\kai\AppData\Local\Programs\Python\Python310-32\lib\site-packages\pip\_vendor\resolvelib\resolvers.py&#34;</span>, line 341, in resolve
+</span></span><span class="line"><span class="cl">    self._add_to_criteria<span class="o">(</span>self.state.criteria, r, <span class="nv">parent</span><span class="o">=</span>None<span class="o">)</span>
+</span></span><span class="line"><span class="cl">  File <span class="s2">&#34;C:\Users\kai\AppData\Local\Programs\Python\Python310-32\lib\site-packages\pip\_vendor\resolvelib\resolvers.py&#34;</span>, line 172, in _add_to_criteria
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> not criterion.candidates:
+</span></span><span class="line"><span class="cl">  File <span class="s2">&#34;C:\Users\kai\AppData\Local\Programs\Python\Python310-32\lib\site-packages\pip\_vendor\resolvelib\structs.py&#34;</span>, line 151, in __bool__
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> bool<span class="o">(</span>self._sequence<span class="o">)</span>
+</span></span><span class="line"><span class="cl">  File <span class="s2">&#34;C:\Users\kai\AppData\Local\Programs\Python\Python310-32\lib\site-packages\pip\_internal\resolution\resolvelib\found_candidates.py&#34;</span>, line 140, in __bool__
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> any<span class="o">(</span>self<span class="o">)</span>
+</span></span><span class="line"><span class="cl">  File <span class="s2">&#34;C:\Users\kai\AppData\Local\Programs\Python\Python310-32\lib\site-packages\pip\_internal\resolution\resolvelib\found_candidates.py&#34;</span>, line 128, in &lt;genexpr&gt;
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="o">(</span>c <span class="k">for</span> c in iterator <span class="k">if</span> id<span class="o">(</span>c<span class="o">)</span> not in self._incompatible_ids<span class="o">)</span>
+</span></span><span class="line"><span class="cl">  File <span class="s2">&#34;C:\Users\kai\AppData\Local\Programs\Python\Python310-32\lib\site-packages\pip\_internal\resolution\resolvelib\found_candidates.py&#34;</span>, line 32, in _iter_built
+</span></span><span class="line"><span class="cl">    <span class="nv">candidate</span> <span class="o">=</span> func<span class="o">()</span>
+</span></span><span class="line"><span class="cl">  File <span class="s2">&#34;C:\Users\kai\AppData\Local\Programs\Python\Python310-32\lib\site-packages\pip\_internal\resolution\resolvelib\factory.py&#34;</span>, line 204, in _make_candidate_from_link
+</span></span><span class="line"><span class="cl">    self._link_candidate_cache<span class="o">[</span>link<span class="o">]</span> <span class="o">=</span> LinkCandidate<span class="o">(</span>
+</span></span><span class="line"><span class="cl">  File <span class="s2">&#34;C:\Users\kai\AppData\Local\Programs\Python\Python310-32\lib\site-packages\pip\_internal\resolution\resolvelib\candidates.py&#34;</span>, line 295, in __init__
+</span></span><span class="line"><span class="cl">    super<span class="o">()</span>.__init__<span class="o">(</span>
+</span></span><span class="line"><span class="cl">  File <span class="s2">&#34;C:\Users\kai\AppData\Local\Programs\Python\Python310-32\lib\site-packages\pip\_internal\resolution\resolvelib\candidates.py&#34;</span>, line 156, in __init__
+</span></span><span class="line"><span class="cl">    self.dist <span class="o">=</span> self._prepare<span class="o">()</span>
+</span></span><span class="line"><span class="cl">  File <span class="s2">&#34;C:\Users\kai\AppData\Local\Programs\Python\Python310-32\lib\site-packages\pip\_internal\resolution\resolvelib\candidates.py&#34;</span>, line 227, in _prepare
+</span></span><span class="line"><span class="cl">    <span class="nv">dist</span> <span class="o">=</span> self._prepare_distribution<span class="o">()</span>
+</span></span><span class="line"><span class="cl">  File <span class="s2">&#34;C:\Users\kai\AppData\Local\Programs\Python\Python310-32\lib\site-packages\pip\_internal\resolution\resolvelib\candidates.py&#34;</span>, line 305, in _prepare_distribution
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> self._factory.preparer.prepare_linked_requirement<span class="o">(</span>
+</span></span><span class="line"><span class="cl">  File <span class="s2">&#34;C:\Users\kai\AppData\Local\Programs\Python\Python310-32\lib\site-packages\pip\_internal\operations\prepare.py&#34;</span>, line 508, in prepare_linked_requirement
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> self._prepare_linked_requirement<span class="o">(</span>req, parallel_builds<span class="o">)</span>
+</span></span><span class="line"><span class="cl">  File <span class="s2">&#34;C:\Users\kai\AppData\Local\Programs\Python\Python310-32\lib\site-packages\pip\_internal\operations\prepare.py&#34;</span>, line 550, in _prepare_linked_requirement
+</span></span><span class="line"><span class="cl">    <span class="nv">local_file</span> <span class="o">=</span> unpack_url<span class="o">(</span>
+</span></span><span class="line"><span class="cl">  File <span class="s2">&#34;C:\Users\kai\AppData\Local\Programs\Python\Python310-32\lib\site-packages\pip\_internal\operations\prepare.py&#34;</span>, line 239, in unpack_url
+</span></span><span class="line"><span class="cl">    <span class="nv">file</span> <span class="o">=</span> get_http_url<span class="o">(</span>
+</span></span><span class="line"><span class="cl">  File <span class="s2">&#34;C:\Users\kai\AppData\Local\Programs\Python\Python310-32\lib\site-packages\pip\_internal\operations\prepare.py&#34;</span>, line 102, in get_http_url
+</span></span><span class="line"><span class="cl">    from_path, <span class="nv">content_type</span> <span class="o">=</span> download<span class="o">(</span>link, temp_dir.path<span class="o">)</span>
+</span></span><span class="line"><span class="cl">  File <span class="s2">&#34;C:\Users\kai\AppData\Local\Programs\Python\Python310-32\lib\site-packages\pip\_internal\network\download.py&#34;</span>, line 145, in __call__
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> chunk in chunks:
+</span></span><span class="line"><span class="cl">  File <span class="s2">&#34;C:\Users\kai\AppData\Local\Programs\Python\Python310-32\lib\site-packages\pip\_internal\cli\progress_bars.py&#34;</span>, line 144, in iter
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> x in it:
+</span></span><span class="line"><span class="cl">  File <span class="s2">&#34;C:\Users\kai\AppData\Local\Programs\Python\Python310-32\lib\site-packages\pip\_internal\network\utils.py&#34;</span>, line 63, in response_chunks
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> chunk in response.raw.stream<span class="o">(</span>
+</span></span><span class="line"><span class="cl">  File <span class="s2">&#34;C:\Users\kai\AppData\Local\Programs\Python\Python310-32\lib\site-packages\pip\_vendor\urllib3\response.py&#34;</span>, line 576, in stream
+</span></span><span class="line"><span class="cl">    <span class="nv">data</span> <span class="o">=</span> self.read<span class="o">(</span><span class="nv">amt</span><span class="o">=</span>amt, <span class="nv">decode_content</span><span class="o">=</span>decode_content<span class="o">)</span>
+</span></span><span class="line"><span class="cl">  File <span class="s2">&#34;C:\Users\kai\AppData\Local\Programs\Python\Python310-32\lib\site-packages\pip\_vendor\urllib3\response.py&#34;</span>, line 512, in <span class="nb">read</span>
+</span></span><span class="line"><span class="cl">    with self._error_catcher<span class="o">()</span>:
+</span></span><span class="line"><span class="cl">  File <span class="s2">&#34;C:\Users\kai\AppData\Local\Programs\Python\Python310-32\lib\contextlib.py&#34;</span>, line 153, in __exit__
+</span></span><span class="line"><span class="cl">    self.gen.throw<span class="o">(</span>typ, value, traceback<span class="o">)</span>
+</span></span><span class="line"><span class="cl">  File <span class="s2">&#34;C:\Users\kai\AppData\Local\Programs\Python\Python310-32\lib\site-packages\pip\_vendor\urllib3\response.py&#34;</span>, line 443, in _error_catcher
+</span></span><span class="line"><span class="cl">    raise ReadTimeoutError<span class="o">(</span>self._pool, None, <span class="s2">&#34;Read timed out.&#34;</span><span class="o">)</span>
+</span></span><span class="line"><span class="cl">pip._vendor.urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool<span class="o">(</span><span class="nv">host</span><span class="o">=</span><span class="s1">&#39;files.pythonhosted.org&#39;</span>, <span class="nv">port</span><span class="o">=</span>443<span class="o">)</span>: Read timed out.
+</span></span><span class="line"><span class="cl">WARNING: You are using pip version 21.2.3<span class="p">;</span> however, version 22.1.2 is available.
+</span></span><span class="line"><span class="cl">You should consider upgrading via the <span class="s1">&#39;C:\Users\kai\AppData\Local\Programs\Python\Python310-32\python.exe -m pip install --upgrade pip&#39;</span> command.
+</span></span></code></pre></div><p>解决办法</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">python -m pip install -U pip
+</span></span></code></pre></div><pre tabindex="0"><code class="language-bush" data-lang="bush">Requirement already satisfied: pip in c:\users\kai\appdata\local\programs\python\python310-32\lib\site-packages (21.2.3)
 Collecting pip
   Downloading pip-22.1.2-py3-none-any.whl (2.1 MB)
      |████████████████████████████████| 2.1 MB 111 kB/s
