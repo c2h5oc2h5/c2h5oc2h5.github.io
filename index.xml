@@ -4,7 +4,7 @@
         <link>https://ziyue.tech/</link>
         <description>wangkai&#39;s blog</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>support@ziyue.tech (亲自巡山的大王)</managingEditor>
-            <webMaster>support@ziyue.tech (亲自巡山的大王)</webMaster><lastBuildDate>Sat, 30 Jul 2022 15:45:49 &#43;0800</lastBuildDate>
+            <webMaster>support@ziyue.tech (亲自巡山的大王)</webMaster><lastBuildDate>Sat, 30 Jul 2022 16:18:17 &#43;0800</lastBuildDate>
             <atom:link href="https://ziyue.tech/index.xml" rel="self" type="application/rss+xml" />
         <item>
     <title>写在前面</title>
@@ -15,6 +15,14 @@
     <description><![CDATA[<p>为什么要搭建自己的博客呢？</p>
 <p>契机</p>
 <p>对博文做个备份。</p>]]></description>
+</item>
+<item>
+    <title>5.5科赫雪花小包裹</title>
+    <link>https://ziyue.tech/posts/5.5%E7%A7%91%E8%B5%AB%E9%9B%AA%E8%8A%B1%E5%B0%8F%E5%8C%85%E8%A3%B9/</link>
+    <pubDate>Sat, 30 Jul 2022 16:18:17 &#43;0800</pubDate>
+    <author>亲自巡山的大王</author>
+    <guid>https://ziyue.tech/posts/5.5%E7%A7%91%E8%B5%AB%E9%9B%AA%E8%8A%B1%E5%B0%8F%E5%8C%85%E8%A3%B9/</guid>
+    <description><![CDATA[科赫曲线 科赫曲线绘制方法 一条直线均分为三段，去掉中间部分，然后在中间部分凸起一个等边三角形。下一阶科赫曲线时把上一阶的每条线段再做一次科赫变]]></description>
 </item>
 <item>
     <title>5.4 Pyinstaller库安装与使用</title>
@@ -41,11 +49,11 @@
     <description><![CDATA[python数码管程序举一反三，构建数码管倒计时 # 倒计时 # 模块化思维解决问题 import turtle as t #t.speed(10) 调节画笔快慢 def drawGap():#数码管间隔 t.penup() t.fd(5) def d]]></description>
 </item>
 <item>
-    <title>5.2 Python数码管绘</title>
-    <link>https://ziyue.tech/posts/5.2python%E6%95%B0%E7%A0%81%E7%AE%A1%E6%98%BE%E7%A4%BA/</link>
+    <title>5.2 Python数码管绘制</title>
+    <link>https://ziyue.tech/posts/5.2python%E6%95%B0%E7%A0%81%E7%AE%A1%E7%BB%98%E5%88%B6/</link>
     <pubDate>Sat, 30 Jul 2022 14:08:24 &#43;0800</pubDate>
     <author>亲自巡山的大王</author>
-    <guid>https://ziyue.tech/posts/5.2python%E6%95%B0%E7%A0%81%E7%AE%A1%E6%98%BE%E7%A4%BA/</guid>
+    <guid>https://ziyue.tech/posts/5.2python%E6%95%B0%E7%A0%81%E7%AE%A1%E7%BB%98%E5%88%B6/</guid>
     <description><![CDATA[利用python的turtle库来实现用7段数码管来显示时间 # 倒计时 import turtle as t #t.speed(10) 调节画笔快慢 def drawGap():#数码管间隔 t.penup() t.fd(5) def drawl]]></description>
 </item>
 <item>
@@ -79,15 +87,6 @@
     <author>亲自巡山的大王</author>
     <guid>https://ziyue.tech/posts/1.3python%E6%B8%A9%E5%BA%A6%E8%BD%AC%E6%8D%A2%E7%A8%8B%E5%BA%8F/</guid>
     <description><![CDATA[#TempConvert.py TempStr = input(&#34;请输入带有符号的温度值:&#34;) if TempStr[-1] in {&#39;F&#39;,&#39;f&#39;}: #这个字符串最后一个字符是否在这个列表里 C = (eval(TempStr[0:-1]) - 32) / 1.8 print(&]]></description>
-</item>
-<item>
-    <title>博客搭建四：hugo添加友链</title>
-    <link>https://ziyue.tech/posts/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E5%9B%9Bhugo%E6%B7%BB%E5%8A%A0%E5%8F%8B%E9%93%BE/</link>
-    <pubDate>Thu, 28 Jul 2022 23:43:21 &#43;0800</pubDate>
-    <author>亲自巡山的大王</author>
-    <guid>https://ziyue.tech/posts/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E5%9B%9Bhugo%E6%B7%BB%E5%8A%A0%E5%8F%8B%E9%93%BE/</guid>
-    <description><![CDATA[<p>交个朋友，为博客添加友链功能（还不完善，显示界面不美观），详情参看<a href="https://ziyue.tech/friend/" target="_blank" rel="noopener noreffer">https://ziyue.tech/friend/</a>
-有好的解决办法会继续在这里更新。</p>]]></description>
 </item>
 </channel>
 </rss>

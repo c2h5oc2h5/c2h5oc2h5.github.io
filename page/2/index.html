@@ -92,6 +92,12 @@
 <a href="https://space.bilibili.com/37696304?spm_id_from=333.1007.0.0" title="bilibili" target="_blank" rel="noopener noreffer me"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@6.20.0/icons/bilibili.svg" aria-hidden="true"></i></a>
 </div></div>
 <article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/posts/4.5pytho%E5%BE%AA%E7%8E%AF%E5%BA%94%E7%94%A8%E8%92%99%E7%89%B9%E5%8D%A1%E6%B4%9B%E6%96%B9%E6%B3%95%E8%AE%A1%E7%AE%97%E5%9C%86%E5%91%A8%E7%8E%87/">4.5 pytho循环应用：蒙特卡洛方法计算圆周率</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="https://blog.csdn.net/bytestudio?type=blog" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>亲自巡山的大王</a>
+</span>&nbsp;<span class="post-publish">published on <time datetime="2022-07-29">2022-07-29</time></span>&nbsp;<span class="post-category">included in <a href="/categories/code/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Code</a></span></div><div class="content"># 圆周率计算 蒙特卡洛 import random import time darts = 1000*1000 # 影响运行时间 hits = 0.0 start = time.perf_counter() # 程序的花费时间大都在循环语句上 for i in range(1, darts+1): x, y = random.random(), random.random() dist = pow(x ** 2 + y ** 2, 0.5) if dist &lt;= 1.0:</div><div class="post-footer">
+        <a href="/posts/4.5pytho%E5%BE%AA%E7%8E%AF%E5%BA%94%E7%94%A8%E8%92%99%E7%89%B9%E5%8D%A1%E6%B4%9B%E6%96%B9%E6%B3%95%E8%AE%A1%E7%AE%97%E5%9C%86%E5%91%A8%E7%8E%87/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/python/">python</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/posts/3.5python%E6%96%87%E6%9C%AC%E8%BF%9B%E5%BA%A6%E6%9D%A1%E4%B8%BE%E4%B8%80%E5%8F%8D%E4%B8%89%E6%B8%90%E5%8F%98%E8%BF%9B%E5%BA%A6%E6%9D%A1/">3.5 python文本进度条举一反三：渐变进度条</a>
     </h1><div class="post-meta"><span class="post-author"><a href="https://blog.csdn.net/bytestudio?type=blog" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>亲自巡山的大王</a>
 </span>&nbsp;<span class="post-publish">published on <time datetime="2022-07-29">2022-07-29</time></span>&nbsp;<span class="post-category">included in <a href="/categories/code/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Code</a></span></div><div class="content"># textbar.py # 渐变显示进度条 import time scale = 50 print(&#34;执行开始&#34;.center(scale//2, &#34;-&#34;)) # str.center(width, fillchar)宽度和填充字</div><div class="post-footer">
@@ -121,13 +127,6 @@
     </h1><div class="post-meta"><span class="post-author"><a href="https://blog.csdn.net/bytestudio?type=blog" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>亲自巡山的大王</a>
 </span>&nbsp;<span class="post-publish">published on <time datetime="2022-07-28">2022-07-28</time></span></div><div class="content"><p>博客搭建逐渐完善，博文内容也逐渐增多，添加搜索功能可以很方便的检索内容，对知识进行回顾，温故而知新。</p></div><div class="post-footer">
         <a href="/posts/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E4%B8%89hugo%E6%B7%BB%E5%8A%A0%E6%90%9C%E7%B4%A2%E5%8A%9F%E8%83%BD/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E5%8D%9A%E5%AE%A2/">博客</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E4%BA%8Chugo%E6%B7%BB%E5%8A%A0gitalk%E8%AF%84%E8%AE%BA%E5%8A%9F%E8%83%BD/">博客搭建二：hugo添加gitalk评论功能</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="https://blog.csdn.net/bytestudio?type=blog" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>亲自巡山的大王</a>
-</span>&nbsp;<span class="post-publish">published on <time datetime="2022-07-27">2022-07-27</time></span></div><div class="content"><p>好的想法需要交流。
-我们的博客已经搭建好了，可以再上面愉快的发文章，但是我们需要一个连接外界和别人交流的窗口，一如多年前QQ的四四方方的长条聊天框，拉近了我们彼此的联系。</p></div><div class="post-footer">
-        <a href="/posts/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E4%BA%8Chugo%E6%B7%BB%E5%8A%A0gitalk%E8%AF%84%E8%AE%BA%E5%8A%9F%E8%83%BD/">Read More</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E5%8D%9A%E5%AE%A2/">博客</a></div></div>
 </article><ul class="pagination"><li class="page-item ">
                     <span class="page-link">
