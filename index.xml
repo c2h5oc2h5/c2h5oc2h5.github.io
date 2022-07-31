@@ -4,7 +4,7 @@
         <link>https://ziyue.tech/</link>
         <description>wangkai&#39;s blog</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>support@ziyue.tech (亲自巡山的大王)</managingEditor>
-            <webMaster>support@ziyue.tech (亲自巡山的大王)</webMaster><lastBuildDate>Sat, 30 Jul 2022 17:08:04 &#43;0800</lastBuildDate>
+            <webMaster>support@ziyue.tech (亲自巡山的大王)</webMaster><lastBuildDate>Mon, 01 Aug 2022 05:04:08 &#43;0800</lastBuildDate>
             <atom:link href="https://ziyue.tech/index.xml" rel="self" type="application/rss+xml" />
         <item>
     <title>写在前面</title>
@@ -15,6 +15,14 @@
     <description><![CDATA[<p>为什么要搭建自己的博客呢？</p>
 <p>契机</p>
 <p>对博文做个备份。</p>]]></description>
+</item>
+<item>
+    <title>Python</title>
+    <link>https://ziyue.tech/posts/python/</link>
+    <pubDate>Mon, 01 Aug 2022 05:04:08 &#43;0800</pubDate>
+    <author>亲自巡山的大王</author>
+    <guid>https://ziyue.tech/posts/python/</guid>
+    <description><![CDATA[]]></description>
 </item>
 <item>
     <title>5.xPython函数和代码复用练习一</title>
@@ -79,14 +87,6 @@
     <author>亲自巡山的大王</author>
     <guid>https://ziyue.tech/posts/3.5python%E6%96%87%E6%9C%AC%E8%BF%9B%E5%BA%A6%E6%9D%A1%E4%B8%BE%E4%B8%80%E5%8F%8D%E4%B8%89%E6%B8%90%E5%8F%98%E8%BF%9B%E5%BA%A6%E6%9D%A1/</guid>
     <description><![CDATA[# textbar.py # 渐变显示进度条 import time scale = 50 print(&#34;执行开始&#34;.center(scale//2, &#34;-&#34;)) # str.center(width, fillchar)宽度和填充字]]></description>
-</item>
-<item>
-    <title>3.2 daydayup举一反三：三天打鱼两天晒网式学习</title>
-    <link>https://ziyue.tech/posts/3.2daydayup%E4%B8%BE%E4%B8%80%E5%8F%8D%E4%B8%89/</link>
-    <pubDate>Fri, 29 Jul 2022 14:28:55 &#43;0800</pubDate>
-    <author>亲自巡山的大王</author>
-    <guid>https://ziyue.tech/posts/3.2daydayup%E4%B8%BE%E4%B8%80%E5%8F%8D%E4%B8%89/</guid>
-    <description><![CDATA[# daydayupQ5.py # 三天打鱼两天晒网式学习 # def保留字用于定义函数,本次返回一个dayup值 def dayUP(df): dayup = 1 for i in range(365): if i % 3 in [1,2]: # 120120120.... dayup = dayup * (1 - 0.01) else: dayup = dayup * (1]]></description>
 </item>
 </channel>
 </rss>
