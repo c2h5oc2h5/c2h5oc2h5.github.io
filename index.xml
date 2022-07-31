@@ -17,12 +17,15 @@
 <p>对博文做个备份。</p>]]></description>
 </item>
 <item>
-    <title>Python</title>
-    <link>https://ziyue.tech/posts/python/</link>
+    <title>5.x Python函数和代码复用练习二</title>
+    <link>https://ziyue.tech/posts/5.xpython%E5%87%BD%E6%95%B0%E5%92%8C%E4%BB%A3%E7%A0%81%E5%A4%8D%E7%94%A8%E7%BB%83%E4%B9%A0%E4%BA%8C/</link>
     <pubDate>Mon, 01 Aug 2022 05:04:08 &#43;0800</pubDate>
     <author>亲自巡山的大王</author>
-    <guid>https://ziyue.tech/posts/python/</guid>
-    <description><![CDATA[]]></description>
+    <guid>https://ziyue.tech/posts/5.xpython%E5%87%BD%E6%95%B0%E5%92%8C%E4%BB%A3%E7%A0%81%E5%A4%8D%E7%94%A8%E7%BB%83%E4%B9%A0%E4%BA%8C/</guid>
+    <description><![CDATA[<h3 id="质数连续计算">质数连续计算</h3>
+<h4 id="描述">描述</h4>
+<p>完成以下功能:</p>
+<p>获得用户输入数字N，计算并输出从N开始的5个质数，单行输出，指数见用逗号分割。</p>]]></description>
 </item>
 <item>
     <title>5.xPython函数和代码复用练习一</title>
