@@ -17,7 +17,7 @@
 <meta name="application-name" content="My cool site">
 <meta name="apple-mobile-web-app-title" content="My cool site"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://ziyue.tech/posts/6.%E7%BB%84%E5%90%88%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/" /><link rel="prev" href="https://ziyue.tech/posts/5.xpython%E5%87%BD%E6%95%B0%E5%92%8C%E4%BB%A3%E7%A0%81%E5%A4%8D%E7%94%A8%E7%BB%83%E4%B9%A0%E4%BA%8C/" /><link rel="next" href="https://ziyue.tech/posts/%E5%85%B3%E4%BA%8E%E6%88%91/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"><script type="application/ld+json">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://ziyue.tech/posts/6.%E7%BB%84%E5%90%88%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/" /><link rel="prev" href="https://ziyue.tech/posts/5.xpython%E5%87%BD%E6%95%B0%E5%92%8C%E4%BB%A3%E7%A0%81%E5%A4%8D%E7%94%A8%E7%BB%83%E4%B9%A0%E4%BA%8C/" /><link rel="next" href="https://ziyue.tech/posts/%E9%80%9A%E4%BF%97%E7%BB%8F%E6%B5%8E%E5%AD%A6%E6%9C%89%E4%BB%B7%E6%98%9F%E7%90%83/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"><script type="application/ld+json">
     {
         "@context": "http://schema.org",
         "@type": "BlogPosting",
@@ -26,7 +26,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/ziyue.tech\/posts\/6.%E7%BB%84%E5%90%88%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B\/"
-        },"genre": "posts","keywords": "python","wordcount":  683 ,
+        },"genre": "posts","keywords": "python","wordcount":  857 ,
         "url": "https:\/\/ziyue.tech\/posts\/6.%E7%BB%84%E5%90%88%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B\/","datePublished": "2022-07-31T04:17:17+08:00","dateModified": "2022-07-31T04:17:17+08:00","publisher": {
             "@type": "Organization",
             "name": ""},"author": {
@@ -102,7 +102,7 @@
         </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">6.组合数据类型</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="https://blog.csdn.net/bytestudio?type=blog" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>亲自巡山的大王</a>
 </span>&nbsp;<span class="post-category">included in <a href="/categories/code/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Code</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2022-07-31">2022-07-31</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;683 words&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2022-07-31">2022-07-31</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;857 words&nbsp;
                 <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;2 minutes&nbsp;</div>
         </div><div class="details toc" id="toc-static"  data-kept="">
                 <div class="details-summary toc-title">
@@ -115,7 +115,7 @@
       <ul>
         <li><a href="#1-集合类型及操作">1 集合类型及操作</a></li>
         <li><a href="#2-序列类型及其操作">2 序列类型及其操作</a></li>
-        <li><a href="#序列类型应用场景">序列类型应用场景</a></li>
+        <li><a href="#3-字典类型">3 字典类型</a></li>
       </ul>
     </li>
   </ul>
@@ -181,9 +181,16 @@ ls * n
 <p>ls.pop(i) # 取出第i位置元素并删除</p>
 <p>ls.remove(x) # 第一个x删除</p>
 <p>ls.reverse() # 将列表元素反转</p>
-<h3 id="序列类型应用场景">序列类型应用场景</h3>
+<h4 id="序列类型应用场景">序列类型应用场景</h4>
 <p>对数据的表达</p>
-<p>转换为元组类型：lt = tuple(ls)</p>
+<p>转换为元组类型：lt = tuple(ls) #无法改变数据</p>
+<p>对数据进行遍历</p>
+<h3 id="3-字典类型">3 字典类型</h3>
+<p>映射：一种索引和数据之间的对应关系</p>
+<p>序列：整合0-N的索引</p>
+<p>映射类型：用户自定义的一种数据索引</p>
+<p>字典类型是映射类型的体现，使用{}或dict()生成，键与数据之间用冒号隔开。</p>
+<p>ex:d = {&ldquo;中国&rdquo;:&ldquo;北京&rdquo;, &ldquo;法国&rdquo;:&ldquo;巴黎&rdquo;}</p>
 </div><div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">
@@ -206,7 +213,7 @@ ls * n
     </div>
 
     <div class="post-nav"><a href="/posts/5.xpython%E5%87%BD%E6%95%B0%E5%92%8C%E4%BB%A3%E7%A0%81%E5%A4%8D%E7%94%A8%E7%BB%83%E4%B9%A0%E4%BA%8C/" class="prev" rel="prev" title="5.x Python函数和代码复用练习二"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>5.x Python函数和代码复用练习二</a>
-            <a href="/posts/%E5%85%B3%E4%BA%8E%E6%88%91/" class="next" rel="next" title="写在前面">写在前面<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+            <a href="/posts/%E9%80%9A%E4%BF%97%E7%BB%8F%E6%B5%8E%E5%AD%A6%E6%9C%89%E4%BB%B7%E6%98%9F%E7%90%83/" class="next" rel="next" title="通俗经济学：有价星球">通俗经济学：有价星球<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
 </div>
 <div id="comments"><div id="gitalk" class="comment"></div><noscript>
                 Please enable JavaScript to view the comments powered by <a href="https://github.com/gitalk/gitalk"></a>Gitalk</a>.
