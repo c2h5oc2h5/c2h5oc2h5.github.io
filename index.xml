@@ -3,90 +3,90 @@
         <title>Ideas Worth Spreading</title>
         <link>https://ziyue.tech/</link>
         <description>wangkai&#39;s blog</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>support@ziyue.tech (亲自巡山的大王)</managingEditor>
-            <webMaster>support@ziyue.tech (亲自巡山的大王)</webMaster><lastBuildDate>Fri, 05 Aug 2022 18:15:11 &#43;0800</lastBuildDate>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>support@ziyue.tech (往来)</managingEditor>
+            <webMaster>support@ziyue.tech (往来)</webMaster><lastBuildDate>Thu, 24 Nov 2022 05:45:31 &#43;0800</lastBuildDate>
             <atom:link href="https://ziyue.tech/index.xml" rel="self" type="application/rss+xml" />
         <item>
     <title>写在前面</title>
     <link>https://ziyue.tech/posts/%E5%85%B3%E4%BA%8E%E6%88%91/</link>
     <pubDate>Wed, 27 Jul 2022 11:48:48 &#43;0800</pubDate>
-    <author>亲自巡山的大王</author>
+    <author>往来</author>
     <guid>https://ziyue.tech/posts/%E5%85%B3%E4%BA%8E%E6%88%91/</guid>
     <description><![CDATA[<p>为什么要搭建自己的博客呢？</p>
 <p>契机</p>
 <p>对博文做个备份。</p>]]></description>
 </item>
 <item>
-    <title>通俗经济学：有价星球</title>
-    <link>https://ziyue.tech/posts/%E9%80%9A%E4%BF%97%E7%BB%8F%E6%B5%8E%E5%AD%A6%E6%9C%89%E4%BB%B7%E6%98%9F%E7%90%83/</link>
-    <pubDate>Fri, 05 Aug 2022 18:15:11 &#43;0800</pubDate>
-    <author>亲自巡山的大王</author>
-    <guid>https://ziyue.tech/posts/%E9%80%9A%E4%BF%97%E7%BB%8F%E6%B5%8E%E5%AD%A6%E6%9C%89%E4%BB%B7%E6%98%9F%E7%90%83/</guid>
-    <description><![CDATA[货币让世界变得更加紧密，从繁华渗透至蛮荒。 莎士比亚：金钱是个好士兵，有了它可以使人勇气百倍。 卢梭：我们手里的金钱是我们保持自由的工具。 马歇尔]]></description>
+    <title>更新测试</title>
+    <link>https://ziyue.tech/posts/%E6%9B%B4%E6%96%B0%E6%B5%8B%E8%AF%95/</link>
+    <pubDate>Thu, 24 Nov 2022 05:45:31 &#43;0800</pubDate>
+    <author>往来</author>
+    <guid>https://ziyue.tech/posts/%E6%9B%B4%E6%96%B0%E6%B5%8B%E8%AF%95/</guid>
+    <description><![CDATA[测试manjaro系统]]></description>
 </item>
 <item>
-    <title>6.组合数据类型</title>
-    <link>https://ziyue.tech/posts/6.%E7%BB%84%E5%90%88%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/</link>
-    <pubDate>Sun, 31 Jul 2022 04:17:17 &#43;0800</pubDate>
-    <author>亲自巡山的大王</author>
-    <guid>https://ziyue.tech/posts/6.%E7%BB%84%E5%90%88%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/</guid>
-    <description><![CDATA[1 集合类型及操作 集合类型定义 集合用{}表示，元素之间用逗号分离 集合中间每个元素唯一，不存在相同元素 集合元素之间无序 集合操作符 并运算S|T、交]]></description>
+    <title>Ubuntu上安装onedrive</title>
+    <link>https://ziyue.tech/posts/ubuntu%E4%B8%8A%E5%AE%89%E8%A3%85onedrive/</link>
+    <pubDate>Mon, 21 Nov 2022 19:25:09 &#43;0800</pubDate>
+    <author>往来</author>
+    <guid>https://ziyue.tech/posts/ubuntu%E4%B8%8A%E5%AE%89%E8%A3%85onedrive/</guid>
+    <description><![CDATA[<p>github项目地址：https://github.com/abraunegg/onedrive，感谢开发者。</p>]]></description>
 </item>
 <item>
-    <title>5.x Python函数和代码复用练习二</title>
-    <link>https://ziyue.tech/posts/5.xpython%E5%87%BD%E6%95%B0%E5%92%8C%E4%BB%A3%E7%A0%81%E5%A4%8D%E7%94%A8%E7%BB%83%E4%B9%A0%E4%BA%8C/</link>
-    <pubDate>Sun, 31 Jul 2022 03:51:45 &#43;0800</pubDate>
-    <author>亲自巡山的大王</author>
-    <guid>https://ziyue.tech/posts/5.xpython%E5%87%BD%E6%95%B0%E5%92%8C%E4%BB%A3%E7%A0%81%E5%A4%8D%E7%94%A8%E7%BB%83%E4%B9%A0%E4%BA%8C/</guid>
-    <description><![CDATA[连续质数计算 描述 完成以下功能: 获得用户输入数字N，计算并输出从N开始的5个质数，单行输出，指数见用逗号分割。 # 连续输出5个质数 # 先定义质数判]]></description>
+    <title>旧版本Typora在Ubuntu上安装和使用</title>
+    <link>https://ziyue.tech/posts/ubuntu%E4%B8%8A%E5%AE%89%E8%A3%85%E5%92%8C%E4%BD%BF%E7%94%A8%E6%97%A7%E7%89%88%E6%9C%ACtypora/</link>
+    <pubDate>Mon, 21 Nov 2022 19:23:33 &#43;0800</pubDate>
+    <author>往来</author>
+    <guid>https://ziyue.tech/posts/ubuntu%E4%B8%8A%E5%AE%89%E8%A3%85%E5%92%8C%E4%BD%BF%E7%94%A8%E6%97%A7%E7%89%88%E6%9C%ACtypora/</guid>
+    <description><![CDATA[1、下载好typora0.11.8软件，用软件商店打开安装。 2、禁止软件升级：sudo apt-mark hold typora 3、在ubuntu的 “软件和更新中”禁用源。]]></description>
 </item>
 <item>
-    <title>5.x Python函数和代码复用练习一</title>
-    <link>https://ziyue.tech/posts/5.xpython%E5%87%BD%E6%95%B0%E5%92%8C%E4%BB%A3%E7%A0%81%E5%A4%8D%E7%94%A8%E7%BB%83%E4%B9%A0%E4%B8%80/</link>
-    <pubDate>Sat, 30 Jul 2022 17:08:04 &#43;0800</pubDate>
-    <author>亲自巡山的大王</author>
-    <guid>https://ziyue.tech/posts/5.xpython%E5%87%BD%E6%95%B0%E5%92%8C%E4%BB%A3%E7%A0%81%E5%A4%8D%E7%94%A8%E7%BB%83%E4%B9%A0%E4%B8%80/</guid>
-    <description><![CDATA[随机密码生成 描述 补充编程模板中代码，完成以下功能： 以整数17为随机数种子，获取用户输入整数N为长度，产生3个长度为N位的密码，密码的每位是一]]></description>
+    <title>海市蜃楼的原理是什么？</title>
+    <link>https://ziyue.tech/posts/%E7%89%A9%E7%90%867%E6%B5%B7%E5%B8%82%E8%9C%83%E6%A5%BC%E7%9A%84%E5%8E%9F%E7%90%86%E6%98%AF%E4%BB%80%E4%B9%88/</link>
+    <pubDate>Mon, 21 Nov 2022 18:28:02 &#43;0800</pubDate>
+    <author>往来</author>
+    <guid>https://ziyue.tech/posts/%E7%89%A9%E7%90%867%E6%B5%B7%E5%B8%82%E8%9C%83%E6%A5%BC%E7%9A%84%E5%8E%9F%E7%90%86%E6%98%AF%E4%BB%80%E4%B9%88/</guid>
+    <description><![CDATA[]]></description>
 </item>
 <item>
-    <title>5.5 科赫雪花小包裹</title>
-    <link>https://ziyue.tech/posts/5.5%E7%A7%91%E8%B5%AB%E9%9B%AA%E8%8A%B1%E5%B0%8F%E5%8C%85%E8%A3%B9/</link>
-    <pubDate>Sat, 30 Jul 2022 16:18:17 &#43;0800</pubDate>
-    <author>亲自巡山的大王</author>
-    <guid>https://ziyue.tech/posts/5.5%E7%A7%91%E8%B5%AB%E9%9B%AA%E8%8A%B1%E5%B0%8F%E5%8C%85%E8%A3%B9/</guid>
-    <description><![CDATA[科赫曲线 科赫曲线绘制方法 一条直线均分为三段，去掉中间部分，然后在中间部分凸起一个等边三角形。下一阶科赫曲线时把上一阶的每条线段再做一次科赫变]]></description>
+    <title>切尔诺贝利核电站是如何爆炸的？</title>
+    <link>https://ziyue.tech/posts/%E7%89%A9%E7%90%863%E5%88%87%E5%B0%94%E8%AF%BA%E8%B4%9D%E5%88%A9%E6%A0%B8%E7%94%B5%E7%AB%99%E6%98%AF%E5%A6%82%E4%BD%95%E7%88%86%E7%82%B8%E7%9A%84/</link>
+    <pubDate>Mon, 21 Nov 2022 17:43:05 &#43;0800</pubDate>
+    <author>往来</author>
+    <guid>https://ziyue.tech/posts/%E7%89%A9%E7%90%863%E5%88%87%E5%B0%94%E8%AF%BA%E8%B4%9D%E5%88%A9%E6%A0%B8%E7%94%B5%E7%AB%99%E6%98%AF%E5%A6%82%E4%BD%95%E7%88%86%E7%82%B8%E7%9A%84/</guid>
+    <description><![CDATA[]]></description>
 </item>
 <item>
-    <title>5.4 Pyinstaller库安装与使用</title>
-    <link>https://ziyue.tech/posts/5.4pyinstaller%E5%BA%93%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/</link>
-    <pubDate>Sat, 30 Jul 2022 15:45:49 &#43;0800</pubDate>
-    <author>亲自巡山的大王</author>
-    <guid>https://ziyue.tech/posts/5.4pyinstaller%E5%BA%93%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/</guid>
-    <description><![CDATA[Pyinstaller库：将.py源代码封装成可执行文件 Pyinstaller库使用 在.py文件目录下使用cmd命令 生成可执行文件命令 pyinstaller -F xx.py]]></description>
+    <title>锂电池安全么？</title>
+    <link>https://ziyue.tech/posts/%E7%89%A9%E7%90%862%E9%94%82%E7%94%B5%E6%B1%A0%E5%AE%89%E5%85%A8%E4%B9%88/</link>
+    <pubDate>Mon, 21 Nov 2022 17:01:49 &#43;0800</pubDate>
+    <author>往来</author>
+    <guid>https://ziyue.tech/posts/%E7%89%A9%E7%90%862%E9%94%82%E7%94%B5%E6%B1%A0%E5%AE%89%E5%85%A8%E4%B9%88/</guid>
+    <description><![CDATA[]]></description>
 </item>
 <item>
-    <title>5.3 Python代码与函数复用：用递归函数求解汉诺塔问题</title>
-    <link>https://ziyue.tech/posts/5.3python%E4%BB%A3%E7%A0%81%E4%B8%8E%E5%87%BD%E6%95%B0%E5%A4%8D%E7%94%A8%E7%94%A8%E9%80%92%E5%BD%92%E5%87%BD%E6%95%B0%E6%B1%82%E8%A7%A3%E6%B1%89%E8%AF%BA%E5%A1%94%E9%97%AE%E9%A2%98/</link>
-    <pubDate>Sat, 30 Jul 2022 15:24:06 &#43;0800</pubDate>
-    <author>亲自巡山的大王</author>
-    <guid>https://ziyue.tech/posts/5.3python%E4%BB%A3%E7%A0%81%E4%B8%8E%E5%87%BD%E6%95%B0%E5%A4%8D%E7%94%A8%E7%94%A8%E9%80%92%E5%BD%92%E5%87%BD%E6%95%B0%E6%B1%82%E8%A7%A3%E6%B1%89%E8%AF%BA%E5%A1%94%E9%97%AE%E9%A2%98/</guid>
-    <description><![CDATA[汉诺塔源于印度古老传说。其中规则如下：已知有三根柱子，其中一根柱子从上到下依次排列着N个圆盘，然后把该柱子上的圆盘，从下面开始按大小顺序重新]]></description>
+    <title>博客搭建五：图床选择</title>
+    <link>https://ziyue.tech/posts/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E4%BA%94%E5%9B%BE%E5%BA%8A%E9%80%89%E6%8B%A9/</link>
+    <pubDate>Sat, 19 Nov 2022 19:20:31 &#43;0800</pubDate>
+    <author>往来</author>
+    <guid>https://ziyue.tech/posts/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E4%BA%94%E5%9B%BE%E5%BA%8A%E9%80%89%E6%8B%A9/</guid>
+    <description><![CDATA[<p>sm.ms图床好像用不了了，还是把图床放在github外加CDN加速靠谱一些。</p>]]></description>
 </item>
 <item>
-    <title>5.2.1 Python数码管绘制举一反三：数码管倒计时</title>
-    <link>https://ziyue.tech/posts/5.2python%E6%95%B0%E7%A0%81%E7%AE%A1%E7%BB%98%E5%88%B6%E4%B8%BE%E4%B8%80%E5%8F%8D%E4%B8%89%E6%95%B0%E7%A0%81%E7%AE%A1%E5%80%92%E8%AE%A1%E6%97%B6/</link>
-    <pubDate>Sat, 30 Jul 2022 15:08:24 &#43;0800</pubDate>
-    <author>亲自巡山的大王</author>
-    <guid>https://ziyue.tech/posts/5.2python%E6%95%B0%E7%A0%81%E7%AE%A1%E7%BB%98%E5%88%B6%E4%B8%BE%E4%B8%80%E5%8F%8D%E4%B8%89%E6%95%B0%E7%A0%81%E7%AE%A1%E5%80%92%E8%AE%A1%E6%97%B6/</guid>
-    <description><![CDATA[python数码管程序举一反三，构建数码管倒计时 # 倒计时 # 模块化思维解决问题 import turtle as t #t.speed(10) 调节画笔快慢 def drawGap():#数码管间隔 t.penup() t.fd(5) def d]]></description>
+    <title>在Ubuntu里用Windows思维安装Clash实现科学上网</title>
+    <link>https://ziyue.tech/posts/ubuntu%E9%87%8C%E7%94%A8windows%E6%80%9D%E7%BB%B4%E5%AE%89%E8%A3%85clash%E5%AE%9E%E7%8E%B0%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/</link>
+    <pubDate>Fri, 18 Nov 2022 19:19:07 &#43;0800</pubDate>
+    <author>往来</author>
+    <guid>https://ziyue.tech/posts/ubuntu%E9%87%8C%E7%94%A8windows%E6%80%9D%E7%BB%B4%E5%AE%89%E8%A3%85clash%E5%AE%9E%E7%8E%B0%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/</guid>
+    <description><![CDATA[<p>新版的ubuntu22.04LTS(ubuntu22.10)异常地好用，在设置里简单设置一下外观，界面就很Mac风，想尝试ubuntu的小伙伴可以入手了。</p>]]></description>
 </item>
 <item>
-    <title>5.2 Python数码管绘制</title>
-    <link>https://ziyue.tech/posts/5.2python%E6%95%B0%E7%A0%81%E7%AE%A1%E7%BB%98%E5%88%B6/</link>
-    <pubDate>Sat, 30 Jul 2022 14:08:24 &#43;0800</pubDate>
-    <author>亲自巡山的大王</author>
-    <guid>https://ziyue.tech/posts/5.2python%E6%95%B0%E7%A0%81%E7%AE%A1%E7%BB%98%E5%88%B6/</guid>
-    <description><![CDATA[利用python的turtle库来实现用7段数码管来显示时间 # 倒计时 import turtle as t #t.speed(10) 调节画笔快慢 def drawGap():#数码管间隔 t.penup() t.fd(5) def drawl]]></description>
+    <title>Ubuntu版本选择和软件们</title>
+    <link>https://ziyue.tech/posts/ubuntu%E7%89%88%E6%9C%AC%E9%80%89%E6%8B%A9%E5%92%8C%E8%BD%AF%E4%BB%B6%E4%BB%AC/</link>
+    <pubDate>Fri, 18 Nov 2022 18:54:47 &#43;0800</pubDate>
+    <author>往来</author>
+    <guid>https://ziyue.tech/posts/ubuntu%E7%89%88%E6%9C%AC%E9%80%89%E6%8B%A9%E5%92%8C%E8%BD%AF%E4%BB%B6%E4%BB%AC/</guid>
+    <description><![CDATA[<p>Ubuntu版本：Ubuntu22.10,有许多新的功能使我放弃了22.04LTS版本。manjaro版本不太适合我，定制性太高，折腾起来很麻烦，我喜欢简洁但不丑陋的系统，manjaro系统每个窗口都会带有一个标题栏，使得页面多出一栏显得更拥挤。</p>]]></description>
 </item>
 </channel>
 </rss>
